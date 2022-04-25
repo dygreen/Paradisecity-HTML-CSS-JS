@@ -1,0 +1,15 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+:root {
+  /* Color */
+  --white-color: #f7f7f7;
+  --grey-color: #666;
+  --black-color: #21201e;
+  --main-color: #9c836a;
+  --accent-color: #63c9cf;
+  --accent-color: #0A81AB;
+  --accent-color: #1597BB;
+  --accent-color: #28ABB9;
+}
