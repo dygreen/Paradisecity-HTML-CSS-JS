@@ -1,0 +1,60 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+:root {
+  /* Color */
+  --white-color: #f7f7f7;
+  --grey-color: #666;
+  --black-color: #21201e;
+  --main-color: #9c836a;
+  --accent-color: #63c9cf;
+}
+
+body{
+  background: var(--white-color);
+  width: 100%;
+}
+
+/* =========== hotels =========== */
+/* ******** paradise ******** */
+section ul{width: 1200px; margin: 100px auto;}
+
+section .hotel li{
+  position: relative;
+  width: 900px;
+  height: 500px;
+}
+
+section .hotel .hotel1 .block{ /* 뒷 박스 */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: right;
+  align-items: top;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+section .hotel li:hover .block{opacity: 1;}
+
+section .hotel .hotel1 .block a{ /* 뒷 박스 텍스트 */
+  color: var(--white-color);
+  font-size: 40px;
+  padding: 15px;
+}
+
+section .hotel li img{ /* 이미지 */
+  width: 100%;
+  height: 100%;
+}
+
+section .hotel li p{
+  position: absolute;
+  top: 0;
+}
+
+
+/* ******** art-paradiso ******** */

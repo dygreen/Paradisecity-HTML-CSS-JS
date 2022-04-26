@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOTELS | 파라다이스시티</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/sub1.css">
   <link rel="stylesheet" href="css/sub2.css">
   <script src="js/jquery-3.6.0.min.js"></script>
@@ -21,19 +21,22 @@
         <div class="header-content">
            <!--top: logo + login  -->
           <div class="top">
-            <div class="logo">
+            <a href="index.html" class="logo">
               <img src="image/logo.png" alt="logo">
+            </a>
+            <div class="submit">
+              <a href="login.html" class="login">로그인</a>
+              <a href="login.html" class="join">회원가입</a>
             </div>
-            <a href="login.html" class="login">로그인</a>
           </div>
           <!-- navbar -->
           <nav>
-            <ul>
-              <li><a href="1_hotels.html">HOTELS</a></li>
-              <li><a href="2_dining.html">DINING</a></li>
-              <li><a href="3_art.html">ART-TAINMENT</a></li>
-              <li><a href="4_wedding.html">WEDDING</a></li>
-              <li><a href="5_activities.html">ACTIVITIES</a></li>
+            <ul class="clear">
+              <li><a href="1_hotels.html">HOTELS</a><span></span></li>
+              <li><a href="2_dining.html">DINING</a><span></span></li>
+              <li><a href="3_art.html">ART-TAINMENT</a><span></span></li>
+              <li><a href="4_wedding.html">WEDDING</a><span></span></li>
+              <li><a href="5_activities.html">ACTIVITIES</a><span></span></li>
             </ul>
           </nav>
         </div>
@@ -41,9 +44,11 @@
 
       <!-- 유동적인 부분: caption-->
       <div class="header-caption">
-        <div class="back">
-          <p>HOTELS</p>
-          <p>파라다이스시티를 대표하는 호텔을 만나보세요.</p>
+        <div class="back1">
+          <div class="text">
+            <p>HOTELS</p>
+            <p>파라다이스시티를 대표하는 호텔을 만나보세요.</p>
+          </div>
         </div>
       </div>
       <!-- navigater -->
@@ -54,14 +59,41 @@
 
     <!-- section -->
     <section>
-
+      <ul class="hotel">
+        <!-- paradise(1-1) -->
+        <li class="hotel1">
+          <div class="block"><a href="1-1.html">바로가기</a></div>
+          <img src="image/hotel1.jpg" alt="paradise hotel">
+          <p class="title">
+            PARADISE<br>
+            HOTEL & RESORT
+          </p>
+          <p class="sub">
+            파라다이스시티의 중심에 위치한<br>
+            파라다이스 호텔 & 리조트
+          </p>
+        </li>
+        <!-- art paradiso(1-2) -->
+        <li class="hotel2">
+          <div class="block"><a href="1-2.html">바로가기</a></div>
+          <img src="image/hotel2.jpg" alt="art hotel">
+          <p class="title">
+            ART PARADISO<br>
+            BOUTIQUE HOTEL
+          </p>
+          <p class="sub">
+            꿈꾸던 일탈을 즐길 수 있는<br> 
+            유러피안 부티크 컨셉의 호텔 아트파라디소
+          </p>
+        </li>
+      </ul>
     </section>
 
     <!-- footer -->
     <footer>
       <div class="footer-content">
         <div class="nav">
-          <ul>
+          <ul class="clear">
             <li><a href="#">오시는 길</a></li>
             <li><a href="#">사이트맵</a></li>
             <li><a href="#">개인정보 처리 방침</a></li>

@@ -1,4 +1,174 @@
 /* =========== header style =========== */
-/* 고정될 부분 */
+@font-face {
+	font-family: 'Eoe_Zno_L';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
-/* 유동적인 부분 */
+:root {
+  /* Color */
+  --white-color: #f7f7f7;
+  --grey-color: #666;
+  --black-color: #21201e;
+  --main-color: #9c836a;
+  --accent-color: #63c9cf;
+}
+
+/* ****** 고정될 부분 ****** */
+header.s-header{
+  position: relative;
+  width: 100%;
+}
+
+.header-content-fixed{
+  width: 100%;
+  height: 140px;
+  position: fixed;
+  top: 0;
+  background: var(--black-color);
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  z-index: 999;
+}
+
+/* top: logo + login */
+header .top{
+  width: 1200px;
+  margin: 20px auto;
+}
+
+header .logo{
+  display: block;  
+  text-align: center;
+}
+
+header .logo img{
+  width: 95px;
+  height: 50px;
+}
+
+header .submit{
+  position: absolute;
+  top: 50px;
+  right: 200px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #999;
+}
+
+header .login:hover{color: var(--main-color);}
+header .join:hover{color: var(--main-color);}
+
+header .submit .login{
+  margin-right: 15px;
+  padding-right: 18px;
+  border-right: 2px solid var(--grey-color);
+  transition: all 0.3s;
+}
+
+header .submit .join{transition: all 0.3s;}
+
+/* navbar */
+nav{
+  width: 100%;
+  border-top: 1px solid var(--main-color);
+  font-family: 'Eoe_Zno_L';
+}
+
+nav ul{
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+nav ul li{
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--white-color);
+  text-align: center;
+  padding: 0 37px;
+  position: relative;
+}
+
+nav ul li:first-child{margin-left: 225px;}
+
+nav ul li:hover a{color: var(--accent-color);}
+
+nav ul li a{
+  display: block;
+  width: 100%;
+  line-height: 50px;
+}
+
+nav ul li span{ /* 가로선 */
+  width: 0;
+  border-bottom: 3px solid var(--accent-color);
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 0.4s;
+}
+
+nav ul li:hover span{
+  width: 40%;
+  border-bottom: 3px solid var(--accent-color);
+  opacity: 1;
+}
+
+/* ****** 유동적인 부분 ****** */
+.header-caption{
+  width: 100%;
+  margin-top: 140px;
+  position: relative;
+}
+
+/* || hotels || */
+/* jumbotron */
+.header-caption .back1{
+  width: 100%;
+  height: 400px;
+  background: url(../image/hotel_all.jpg) no-repeat top;
+  background-size: cover;
+}
+
+.header-caption .text{
+  width: 1200px; 
+  margin:0 auto;
+  color: var(--white-color);
+  padding-top: 130px;
+}
+
+.header-caption .text p:first-child{
+  font-family: 'Eoe_Zno_L';
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.header-caption .text p:last-child{
+  font-size: 20px;
+  margin-top: 15px;
+  border-left: 4px solid var(--white-color);
+  padding-left: 15px;
+  margin-left: 5px;
+}
+
+/* navigater */
+.header-navi{
+  font-family: 'Eoe_Zno_L';
+  position: absolute;
+  right: 200px;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.header-navi a{font-weight: bold;}
+
+.header-navi a:hover {color: var(--accent-color);}
+/* || dining || */
+/* || art-tainment || */
+/* || wedding || */
+/* || activities || */

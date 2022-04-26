@@ -1,5 +1,6 @@
 @charset "utf-8"; /* 다국어용 문자셋팅 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
 @font-face {
 	font-family: 'NanumBarunGothic';
 	font-style: normal;

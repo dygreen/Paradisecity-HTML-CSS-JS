@@ -1,0 +1,52 @@
+/* =========== footer style =========== */
+@font-face {
+	font-family: 'Eoe_Zno_L';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+  /* Color */
+  --white-color: #f7f7f7;
+  --grey-color: #666;
+  --black-color: #21201e;
+  --main-color: #9c836a;
+  --accent-color: #63c9cf;
+}
+
+footer{
+  /* margin-top: 600px; */
+  border-top: 1px solid var(--main-color);
+  width: 100%;
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+.footer-content{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* nav */
+footer .nav{margin: 30px 0 30px 200px;}
+
+footer .nav ul li{
+  float: left;
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 2px solid var(--grey-color);
+}
+
+footer .nav ul li:last-child{border: none;}
+
+footer .nav ul li:hover a{text-decoration: underline;}
+
+/* address */
+footer .address{
+  text-align: center;
+  color: var(--grey-color);
+  padding-bottom: 30px;
+}
+
+footer .address p:last-child{margin-top: 5px;}

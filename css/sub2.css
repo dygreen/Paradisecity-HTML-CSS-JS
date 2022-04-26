@@ -10,3 +10,8 @@
   --main-color: #9c836a;
   --accent-color: #63c9cf;
 }
+
+body{
+  background: var(--white-color);
+  width: 100%;
+}
