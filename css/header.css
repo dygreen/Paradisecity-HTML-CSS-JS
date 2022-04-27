@@ -23,19 +23,20 @@ header.s-header{
 
 .header-content-fixed{
   width: 100%;
-  height: 140px;
+  height: 120px;
   position: fixed;
   top: 0;
   background: var(--black-color);
   border-top: 1px solid var(--main-color);
   border-bottom: 1px solid var(--main-color);
   z-index: 999;
+  transition: all 0.4s ease-in;
 }
 
 /* top: logo + login */
 header .top{
   width: 1200px;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 header .logo{
@@ -50,10 +51,9 @@ header .logo img{
 
 header .submit{
   position: absolute;
-  top: 50px;
+  top: 40px;
   right: 200px;
   font-size: 17px;
-  font-weight: bold;
   color: #999;
 }
 
@@ -84,7 +84,7 @@ nav ul{
 
 nav ul li{
   float: left;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: var(--white-color);
   text-align: center;
@@ -92,7 +92,7 @@ nav ul li{
   position: relative;
 }
 
-nav ul li:first-child{margin-left: 225px;}
+nav ul li:first-child{margin-left: 245px;}
 
 nav ul li:hover a{color: var(--accent-color);}
 
@@ -103,26 +103,26 @@ nav ul li a{
 }
 
 nav ul li span{ /* 가로선 */
-  width: 0;
-  border-bottom: 3px solid var(--accent-color);
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-image:linear-gradient(to right,transparent 0%,rgba(99, 201, 207,0.9) 50%,transparent 100%);
   position: absolute;
-  top: 40px;
+  top: 37px;
   left: 50%;
-  opacity: 0;
-  transform: translateX(-50%);
+  transform:  translateX(-50%);
   transition: all 0.4s;
 }
 
 nav ul li:hover span{
-  width: 40%;
-  border-bottom: 3px solid var(--accent-color);
+  width: 60%;
   opacity: 1;
 }
 
 /* ****** 유동적인 부분 ****** */
 .header-caption{
   width: 100%;
-  margin-top: 140px;
+  margin-top: 120px;
   position: relative;
 }
 
@@ -140,20 +140,21 @@ nav ul li:hover span{
   margin:0 auto;
   color: var(--white-color);
   padding-top: 130px;
+  text-shadow: 3px 4px 7px rgba(33, 32, 30,0.8);
 }
 
 .header-caption .text p:first-child{
   font-family: 'Eoe_Zno_L';
-  font-size: 90px;
+  font-size: 100px;
   font-weight: bold;
+  text-align: center;
 }
 
 .header-caption .text p:last-child{
   font-size: 20px;
   margin-top: 15px;
-  border-left: 4px solid var(--white-color);
-  padding-left: 15px;
   margin-left: 5px;
+  text-align: center;
 }
 
 /* navigater */
@@ -163,12 +164,42 @@ nav ul li:hover span{
   right: 200px;
   font-size: 20px;
   padding: 10px 0;
+  width: 160px;
+  height: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--main-color);
 }
 
 .header-navi a{font-weight: bold;}
 
-.header-navi a:hover {color: var(--accent-color);}
+.header-navi a:hover{color: var(--accent-color);}
+
+
 /* || dining || */
+.header-caption .back2{
+  width: 100%;
+  height: 400px;
+  background: url(../image/dining_all.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
 /* || art-tainment || */
+.header-caption .back3{
+  width: 100%;
+  height: 400px;
+  background: url(../image/art.jpg) no-repeat top;
+  background-size: cover;
+}
+
+
 /* || wedding || */
+.header-caption .back4{
+  width: 100%;
+  height: 400px;
+  background: url(../image/wedding.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
 /* || activities || */

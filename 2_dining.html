@@ -12,7 +12,7 @@
   <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/main.js"></script>
 </head>
-<body>
+<body onload="intro();">
   <div id="wrap">
     <!-- header -->
     <header class="s-header">
@@ -44,9 +44,11 @@
 
       <!-- 유동적인 부분: caption-->
       <div class="header-caption">
-        <div class="back">
-          <p>DINING</p>
-          <p>파라다이스시티를 대표하는 다이닝을 만나보세요.</p>
+        <div class="back2">
+          <div class="text">
+            <p>DINING</p>
+            <p>파라다이스시티를 대표하는 다이닝을 만나보세요.</p>
+          </div>
         </div>
       </div>
       <!-- navigater -->
@@ -57,7 +59,36 @@
 
     <!-- section -->
     <section>
-
+      <ul class="clear">
+        <!-- paradise(1-1) -->
+        <li class="dining dining1 clear">
+          <img src="image/dining1.jpg" alt="dining">
+          <div class="text">
+            <p class="title">
+              FINE<br>DINE & DRINK
+            </p>
+            <p class="sub">
+              최상급 식자재를 사용한<br>
+              파라다이스 파인 다이닝
+            </p>
+            <div class="link"><a href="2-1.html">바로가기</a></div>
+          </div>
+        </li>
+        <!-- art paradiso(1-2) -->
+        <li class="dining dining2 clear">
+          <img src="image/dining2.jpg" alt="dining">
+          <div class="text">
+            <p class="title">
+              CASUAL<br>DINE & DRINK
+            </p>
+            <p class="sub">
+              간편하고 다양하게 즐길 수 있는<br> 
+              트렌디한 캐주얼 다이닝
+            </p>
+            <div class="link"><a href="2-2.html">바로가기</a></div>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <!-- footer -->
