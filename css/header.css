@@ -131,7 +131,8 @@ nav ul li:hover span{
 .header-caption .back1{
   width: 100%;
   height: 400px;
-  background: url(../image/hotel_all.jpg) no-repeat top;
+  background: url(../image/paradise.jpg) no-repeat bottom;
+  /* background: url(../image/hotel_all.jpeg) no-repeat bottom; */
   background-size: cover;
 }
 
@@ -173,6 +174,61 @@ nav ul li:hover span{
 .header-navi a{font-weight: bold;}
 
 .header-navi a:hover{color: var(--accent-color);}
+
+/* ============ hotel: 1-1 ============*/
+.header-caption .back1-1{
+  background: url(../image/paradise.jpg) no-repeat center;
+  width: 100%;
+  height: 680px;
+  background-size: cover;
+}
+
+.header-caption .title1-1{width: 1200px; margin: 0 auto;}
+
+.title1-1>p{
+  position: absolute;
+  top: 220px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.title1-1 .main{
+  font-family: 'Eoe_Zno_L';
+  font-size: 100px;
+  letter-spacing: -5px;
+  position: relative;
+  z-index: 100;
+  color: var(--white-color);
+}
+
+.title1-1 span{ /* 텍스트 배경 */
+  display: block;
+  position: absolute;
+  z-index: 50;
+  top: 220px;
+  /* width: 425px; -> jQuery에서 조정*/ 
+  width: 0;
+  height: 96px;
+  background: var(--main-color);
+}
+
+.title1-1 .sub{
+  margin-top: 110px;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white-color);
+}
+
+.title1-1 .sub>strong{ /* 강조 텍스트 */
+  font-size: 20px;
+  color: var(--white-color);
+}
+
+.header-navi.navi1-1{
+  width: 270px;
+  top: 690px;
+}
+
+/* ============ hotel: 1-2 ============ */
 
 
 /* || dining || */

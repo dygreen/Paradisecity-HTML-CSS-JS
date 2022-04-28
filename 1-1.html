@@ -11,8 +11,9 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
-<body>
+<body onload="titleIntro();">
   <div id="wrap">
     <!-- header -->
     <header class="s-header">
@@ -44,30 +45,31 @@
 
       <!-- 유동적인 부분: caption-->
       <div class="header-caption">
-        <div class="title1-1">
-          <p class="main">PARADISE<span></span></p>
-          <p class="sub">
-            파라다이스시티의 중심에 위치한 파라다이스 호텔 & 리조트는<br>
-            몸과 마음의 휴식은 물론 엔터테인먼트까지 편안하게 즐길 수 있는 컨템포러리 럭셔리 호텔입니다.<br>
-            아름다운 석양을 감상 할 수 있는 이국적인 실내외 수영장, 다양한 액티비티를 즐길 수 있는 사파리파크와<br>
-            정상급 셰프가 선보이는 파인다이닝 레스토랑까지 다양한 부대 시설을 편리하게 즐길 수 있습니다.
-          </p>
+        <div class="back1-1">
+          <div class="title1-1">
+            <p class="main">PARADISE</p><span></span>
+            <p class="sub">
+              <strong>파라다이스시티의 중심에 위치한</strong>   파라다이스 호텔 & 리조트는<br>
+              몸과 마음의 휴식은 물론 엔터테인먼트까지 편안하게 즐길 수 있는 컨템포러리 럭셔리 호텔입니다.<br>
+              아름다운 석양을 감상 할 수 있는 이국적인 실내외 수영장, 다양한 액티비티를 즐길 수 있는 사파리파크와<br>
+              정상급 셰프가 선보이는 파인다이닝 레스토랑까지 다양한 부대 시설을 편리하게 즐길 수 있습니다.
+            </p>
+          </div>
         </div>
       </div>
       <!-- navigater -->
-      <div class="header-navi">
+      <div class="header-navi navi1-1">
         <p>HOME &gt; HOTELS &gt; <a href="1-1.html">PARADISE</a></p>
       </div>
     </header>
-
-
+    
     <!-- section -->
     <section>
       <!-- tab menu -->
       <div id="tab">
         <!-- tab button -->
         <ul class="tab-button">
-          <li class="selected">디럭스</li>
+          <li class="selected">디럭스</li> <!-- ✔ -->
           <li>스위트</li>
           <li>풀 빌라</li>
         </ul>
@@ -75,7 +77,7 @@
         <!-- tab contents -->
         <ul class="tab-contents">
           <!-- 디럭스 -->
-          <li class="room1 show">
+          <li class="room1 show"> <!-- ✔ -->
             <ul>
               <!-- 디럭스 -->
               <li class="r1-1">
@@ -84,7 +86,19 @@
                   <p class="sub">모던하면서 아늑한 인테리어와 편안한<br>여유로움을 느낄 수 있는 디럭스 룸</p>
                 </div>
                 <div class="gallery">
-
+                  <ul class="largeImg"> <!-- 큰 이미지 -->
+                    <li><img src="image/r1-1-1.jpg" alt="image1"></li>
+                    <li><img src="image/r1-1-2.jpg" alt="image2"></li>
+                    <li><img src="image/r1-1-3.jpg" alt="image3"></li>
+                  </ul>
+                  <ul class="thumbs"> <!-- 썸네일 이미지 -->
+                    <li><a href="#none"><img src="image/r1-1-1.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r1-1-2.jpg" alt="image2"></a></li>
+                    <li><a href="#none"><img src="image/r1-1-3.jpg" alt="image3"></a></li>
+                  </ul>
+                  <!-- prev/next btn -->
+                  <a href="#none" class="prev_btn"><img src="image/prev_btn.png" alt="prev button"></a>
+                  <a href="#none" class="next_btn"><img src="image/next_btn.png" alt="next button"></a>
                 </div>
               </li>
               <!-- 프리미어 디럭스 -->
@@ -94,7 +108,19 @@
                   <p class="sub">한층 여유로운 공간과 세련된<br> 인테리어가 어우러진 프리미어 디럭스</p>
                 </div>
                 <div class="gallery">
-
+                  <ul class="largeImg"> <!-- 큰 이미지 -->
+                    <li><img src="image/r1-2-1.jpg" alt="image1"></li>
+                    <li><img src="image/r1-2-2.jpg" alt="image2"></li>
+                    <li><img src="image/r1-2-3.jpg" alt="image3"></li>
+                  </ul>
+                  <ul class="thumbs"> <!-- 썸네일 이미지 -->
+                    <li><a href="#none"><img src="image/r1-2-1.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r1-2-2.jpg" alt="image2"></a></li>
+                    <li><a href="#none"><img src="image/r1-2-3.jpg" alt="image3"></a></li>
+                  </ul>
+                  <!-- prev/next btn -->
+                  <a href="#none" class="prev_btn"><img src="image/prev_btn.png" alt="prev button"></a>
+                  <a href="#none" class="next_btn"><img src="image/next_btn.png" alt="next button"></a>
                 </div>
               </li>
               <!-- 그랜드 프리미어 디럭스 -->
@@ -104,11 +130,24 @@
                   <p class="sub">침실과 거실이 하나로 이어지는 특별한 공간<br>구성과 모던한 감각, 그랜드 프리미어 디럭스</p>
                 </div>
                 <div class="gallery">
-
+                  <ul class="largeImg"> <!-- 큰 이미지 -->
+                    <li><img src="image/r1-3-1.jpg" alt="image1"></li>
+                    <li><img src="image/r1-3-2.jpg" alt="image2"></li>
+                    <li><img src="image/r1-3-3.jpg" alt="image3"></li>
+                  </ul>
+                  <ul class="thumbs"> <!-- 썸네일 이미지 -->
+                    <li><a href="#none"><img src="image/r1-3-1.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r1-3-2.jpg" alt="image2"></a></li>
+                    <li><a href="#none"><img src="image/r1-3-3.jpg" alt="image3"></a></li>
+                  </ul>
+                  <!-- prev/next btn -->
+                  <a href="#none" class="prev_btn"><img src="image/prev_btn.png" alt="prev button"></a>
+                  <a href="#none" class="next_btn"><img src="image/next_btn.png" alt="next button"></a>
                 </div>
               </li>
             </ul>
           </li>
+
           <!-- 스위트 -->
           <li class="room2">
             <ul>
@@ -117,40 +156,111 @@
                   <p class="title">코너 스위트</p>
                   <p class="sub">편안한 분위기의 침실과 우아한 감성의 거실이<br> 분리되어 독립적 공간 활용이 매력적인 코너 스위트</p>
                 </div>
-                <div class="gallery"></div>
+                <div class="gallery">
+                  <ul class="largeImg"> <!-- 큰 이미지 -->
+                    <li><img src="image/r2-1-1.jpg" alt="image1"></li>
+                    <li><img src="image/r2-1-2.jpg" alt="image2"></li>
+                    <li><img src="image/r2-1-3.jpg" alt="image3"></li>
+                  </ul>
+                  <ul class="thumbs"> <!-- 썸네일 이미지 -->
+                    <li><a href="#none"><img src="image/r2-1-1.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r2-1-2.jpg" alt="image2"></a></li>
+                    <li><a href="#none"><img src="image/r2-1-3.jpg" alt="image3"></a></li>
+                  </ul>
+                  <!-- prev/next btn -->
+                  <a href="#none" class="prev_btn"><img src="image/prev_btn.png" alt="prev button"></a>
+                  <a href="#none" class="next_btn"><img src="image/next_btn.png" alt="next button"></a>
+                </div>
               </li>
               <li class="r2-2">
                 <div class="text">
                   <p class="title">디럭스 스위트</p>
                   <p class="sub">심플함과 우아함의 상반적인 매력을 지닌 호텔<br>파라다이스의 대표 스위트 객실, 디럭스 스위트</p>
                 </div>
-                <div class="gallery"></div>
+                <div class="gallery">
+                  <ul class="largeImg"> <!-- 큰 이미지 -->
+                    <li><img src="image/r2-2-1.jpg" alt="image1"></li>
+                    <li><img src="image/r2-2-2.jpg" alt="image2"></li>
+                    <li><img src="image/r2-2-3.jpg" alt="image3"></li>
+                  </ul>
+                  <ul class="thumbs"> <!-- 썸네일 이미지 -->
+                    <li><a href="#none"><img src="image/r2-2-1.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r2-2-2.jpg" alt="image2"></a></li>
+                    <li><a href="#none"><img src="image/r2-2-3.jpg" alt="image3"></a></li>
+                  </ul>
+                  <!-- prev/next btn -->
+                  <a href="#none" class="prev_btn"><img src="image/prev_btn.png" alt="prev button"></a>
+                  <a href="#none" class="next_btn"><img src="image/next_btn.png" alt="next button"></a>
+                </div>
               </li>
               <li class="r2-3">
                 <div class="text">
                   <p class="title">그랜드 디럭스 스위트</p>
                   <p class="sub">클래식한 감성과 이국적인 신비로움이 가득한<br>그랜드 디럭스 스위트</p>
                 </div>
-                <div class="gallery"></div>
+                <div class="gallery">
+                  <ul class="largeImg"> <!-- 큰 이미지 -->
+                    <li><img src="image/r2-3-1.jpg" alt="image1"></li>
+                    <li><img src="image/r2-3-2.jpg" alt="image1"></li>
+                    <li><img src="image/r2-3-3.jpg" alt="image1"></li>
+                  </ul>
+                  <ul class="thumbs"> <!-- 썸네일 이미지 -->
+                    <li><a href="#none"><img src="image/r2-3-1.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r2-3-2.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r2-3-3.jpg" alt="image1"></a></li>
+                  </ul>
+                  <!-- prev/next btn -->
+                  <a href="#none" class="prev_btn"><img src="image/prev_btn.png" alt="prev button"></a>
+                  <a href="#none" class="next_btn"><img src="image/next_btn.png" alt="next button"></a>
+                </div>
               </li>
             </ul>
           </li>
+
           <!-- 풀 빌라 -->
           <li class="room3">
             <ul>
               <li class="r3-1">
                 <div class="text">
-                  <p class="title"></p>
-                  <p class="sub"></p>
+                  <p class="title">디럭스 풀 빌라</p>
+                  <p class="sub">고급스러운 색채와 감각적인 분위기를 지닌<br>풀빌라의 정석, 디럭스 풀빌라</p>
                 </div>
-                <div class="gallery"></div>
+                <div class="gallery">
+                  <ul class="largeImg"> <!-- 큰 이미지 -->
+                    <li><img src="image/r3-1-1.jpg" alt="image1"></li>
+                    <li><img src="image/r3-1-2.jpg" alt="image1"></li>
+                    <li><img src="image/r3-1-3.jpg" alt="image1"></li>
+                  </ul>
+                  <ul class="thumbs"> <!-- 썸네일 이미지 -->
+                    <li><a href="#none"><img src="image/r3-1-1.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r3-1-2.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r3-1-3.jpg" alt="image1"></a></li>
+                  </ul>
+                  <!-- prev/next btn -->
+                  <a href="#none" class="prev_btn"><img src="image/prev_btn.png" alt="prev button"></a>
+                  <a href="#none" class="next_btn"><img src="image/next_btn.png" alt="next button"></a>
+                </div>
               </li>
               <li class="r3-2">
                 <div class="text">
-                  <p class="title"></p>
-                  <p class="sub"></p>
+                  <p class="title">그랜드 디럭스 풀 빌라</p>
+                  <p class="sub">호텔 파라다이스만의 예술적 감성이 묻어나는<br>격이 다른 럭셔리한 공간, 그랜드 디럭스 풀빌라</p>
                 </div>
-                <div class="gallery"></div>
+                <div class="gallery">
+                  <ul class="largeImg"> <!-- 큰 이미지 -->
+                    <li><img src="image/r3-2-1.jpg" alt="image1"></li>
+                    <li><img src="image/r3-2-2.jpg" alt="image1"></li>
+                    <li><img src="image/r3-2-3.jpg" alt="image1"></li>
+                  </ul>
+                  <ul class="thumbs"> <!-- 썸네일 이미지 -->
+                    <li><a href="#none"><img src="image/r3-2-1.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r3-2-2.jpg" alt="image1"></a></li>
+                    <li><a href="#none"><img src="image/r3-2-3.jpg" alt="image1"></a></li>
+                  </ul>
+                  <!-- prev/next btn -->
+                  <a href="#none" class="prev_btn"><img src="image/prev_btn.png" alt="prev button"></a>
+                  <a href="#none" class="next_btn"><img src="image/next_btn.png" alt="next button"></a>
+                </div>
               </li>
             </ul>
           </li>
