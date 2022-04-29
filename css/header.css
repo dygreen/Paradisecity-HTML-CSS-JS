@@ -29,7 +29,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   display: block;
   transition: all 0.3s;
 }
@@ -151,7 +151,7 @@ nav ul li:hover span{
 }
 
 
-/* || hotels || */
+/* ############## hotels ############## */
 /* jumbotron */
 .header-caption .back1{
   width: 100%;
@@ -273,7 +273,8 @@ nav ul li:hover span{
 .header-navi.navi1-2{width: 320px;}
 
 
-/* || dining || */
+/* ############## dining ############## */
+/* 종합 */
 .header-caption .back2{
   width: 100%;
   height: 400px;
@@ -281,8 +282,48 @@ nav ul li:hover span{
   background-size: cover;
 }
 
+/* ============ dining: 1-1 + 1-2 ============*/
+.header-caption .back2-1, .back2-2{width: 1200px; margin: 0px auto;}
+.header-caption .title2-1, .title2-2{margin-top: 200px;}
 
-/* || art-tainment || */
+.title2-1 .main, .title2-2 .main{ /* 타이틀 */
+  font-family: 'Eoe_Zno_L';
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: var(--main-color);
+}
+
+.title2-2 .main{color: var(--accent-color);}
+
+.title2-1 .sub, .title2-2 .sub{ /* 서브 */
+  margin-top: 15px;
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--grey-color);
+}
+
+.header-navi.navi2-1{ /* navi */
+  top: -50px;
+  width: 280px;
+}
+
+.header-navi.navi2-2{
+  top: -50px;
+  width: 300px;
+}
+
+p.line{ /* 구분 선 */
+  position: absolute;
+  top: 480px;
+  left: 530px;
+  width: 900px;
+  height: 2px;
+  background-image:linear-gradient(to right,transparent 0%,rgba(102, 102, 102,0.5) 50%,transparent 100%);
+}
+
+
+/* ############## art-tainment ############## */
 .header-caption .back3{
   width: 100%;
   height: 400px;
@@ -291,7 +332,7 @@ nav ul li:hover span{
 }
 
 
-/* || wedding || */
+/* ############## wedding ############## */
 .header-caption .back4{
   width: 100%;
   height: 400px;
@@ -300,4 +341,4 @@ nav ul li:hover span{
 }
 
 
-/* || activities || */
+/* ############## activities ############## */

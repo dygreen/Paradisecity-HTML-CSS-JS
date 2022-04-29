@@ -14,6 +14,15 @@ function titleIntro(){
   $(".title1-2 span").stop().animate({width:"640px"},1000);
 }
 
+// dining 1-1, 1-2: 이미지 애니메이션
+function showUp(){
+  // 1-1
+  $("#dining1 .fine1, .fine2").css("opacity","1").addClass("showUp");
+  // 1-2
+  $("#dining2 .casual1, .casual2, .casual3").css("opacity","1").addClass("showUp");
+}
+
+
 $(document).ready(function(){
   // navbar scroll 효과 + top btn
   $(window).scroll(function(){
@@ -86,5 +95,26 @@ $(document).ready(function(){
     galleryImg(img_new);
   });
 
+  // dining 2-1: 스크롤 애니메이션
+  $(window).scroll(function(){
+    let val = $(window).scrollTop();
+    if(val > 600 && val < 1300){
+      $("#dining1 .fine3, .fine4").css("opacity","1").addClass("showUp");
+    } else if(val > 1300 && val < 1900){
+      $("#dining1 .fine5, .fine6").css("opacity","1").addClass("showUp");
+    } else if(val > 1900){
+      $("#dining1 .fine7, .fine8").css("opacity","1").addClass("showUp");
+    }
+  });
+
+  // dining 2-2: 스크롤 애니메이션
+  $(window).scroll(function(){
+    let val2 = $(window).scrollTop();
+    if(val2 > 360 && val2 < 720){
+      $("#dining2 .casual4, .casual5, .casual6").css("opacity","1").addClass("showUp");
+    } else if(val2 > 720){
+      $("#dining2 .casual7, .casual8, .casual9").css("opacity","1").addClass("showUp");
+    }
+  });
 
 });

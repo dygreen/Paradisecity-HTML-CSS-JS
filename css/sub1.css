@@ -185,11 +185,6 @@ section li.hotel2 .text{ /* hotel2 세부설정 */
 }
 
 
-/* ******** hotels > art paradiso(1-2) ******** */
-
-
-
-
 /* =========== dining =========== */
 /* ******** dining > 종합안내 ******** */
 section ul{position: relative;}
@@ -256,4 +251,88 @@ section li.dining2 .text{ /* hotel2 세부설정 */
 }
 
 /* ******** dining > fine(2-1) ******** */
+.showUp{ /* -> jQuery */
+  margin-top: -70px;
+  opacity: 1;
+}
+
+section #dining1{
+  position:relative;
+  width: 1200px;
+  height: 2750px; /* 컨텐츠 길이 */
+}
+
+#dining1 li{
+  margin-left: 80px;
+  position: absolute;
+  opacity: 0;
+  transition: all 1s;
+}
+
+#dining1 li img{cursor: pointer;}
+
+#dining1 li:hover{transform: scale(1.05);}
+
+#dining1 li .text .title{ /* 타이틀 */
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--main-color);
+  margin-top: 10px;
+}
+
+#dining1 li .text .sub{ /* 서브 */
+  font-size: 15px;
+  margin-top: 2px;
+  line-height: 20px;
+  color: #999;
+}
+
+#dining1 .fine1{top: 120px;} /* fine img 위치 조정 */
+#dining1 .fine2{top: 220px; right: 80px;}
+#dining1 .fine3{top: 700px;}
+#dining1 .fine4{top: 800px; right: 80px;}
+#dining1 .fine5{top: 1600px;}
+#dining1 .fine6{top: 1500px; right: 80px;}
+#dining1 .fine7{top: 2200px;}
+#dining1 .fine8{top: 2050px; right: 80px;}
+
+
+
 /* ******** dining > casual(2-2) ******** */
+section #dining2{margin-top: 270px;}
+
+#dining2 li{
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  width: 360px;
+  height: 370px;
+  overflow: hidden;
+  opacity: 0; /* -> jQuery */
+  transition: all 1s;
+}
+
+#dining2 li img{
+  width: 352px;
+  height: 232px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+#dining2 li:hover img{transform: scale(1.08);}
+
+#dining2 .text{text-align: center;}
+
+#dining2 .text .title{ /* 타이틀 */
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--grey-color);
+  margin-top: 10px;
+}
+
+#dining2 li .text .sub{ /* 서브 */
+  font-size: 15px;
+  margin-top: 2px;
+  line-height: 20px;
+  color: #999;
+}
