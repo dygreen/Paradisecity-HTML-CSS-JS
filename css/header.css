@@ -15,6 +15,30 @@
   --accent-color: #63c9cf;
 }
 
+/* *** top btn *** */
+#top_btn {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1000;
+  display: none;
+}
+
+#top_btn a.active {
+  background: url(../image/top_btn.png) no-repeat;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: block;
+  transition: all 0.3s;
+}
+
+#top_btn a.active:hover {
+  background: url(../image/top_btn_on.png) no-repeat 0 0;
+}
+
+
 /* ****** 고정될 부분 ****** */
 header.s-header{
   position: relative;
@@ -126,13 +150,13 @@ nav ul li:hover span{
   position: relative;
 }
 
+
 /* || hotels || */
 /* jumbotron */
 .header-caption .back1{
   width: 100%;
   height: 400px;
   background: url(../image/paradise.jpg) no-repeat bottom;
-  /* background: url(../image/hotel_all.jpeg) no-repeat bottom; */
   background-size: cover;
 }
 
@@ -175,23 +199,27 @@ nav ul li:hover span{
 
 .header-navi a:hover{color: var(--accent-color);}
 
-/* ============ hotel: 1-1 ============*/
-.header-caption .back1-1{
+/* ============ hotel: 1-1 + 1-2 ============*/
+.header-caption .back1-1, .back1-2{
   background: url(../image/paradise.jpg) no-repeat center;
   width: 100%;
   height: 680px;
   background-size: cover;
 }
 
-.header-caption .title1-1{width: 1200px; margin: 0 auto;}
+.back1-2{background: url(../image/paradiso.jpg);}
 
-.title1-1>p{
+.header-caption .title1-1, .title1-2{width: 1200px; margin: 0 auto;}
+
+.title1-1>p, .title1-2>p{
   position: absolute;
   top: 220px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
-.title1-1 .main{
+.title1-2>p{top: 210px;}
+
+.title1-1 .main, .title1-2 .main{
   font-family: 'Eoe_Zno_L';
   font-size: 100px;
   letter-spacing: -5px;
@@ -200,7 +228,12 @@ nav ul li:hover span{
   color: var(--white-color);
 }
 
-.title1-1 span{ /* 텍스트 배경 */
+.title1-2 .main{
+  font-size: 85px;
+  line-height: 75px;
+}
+
+.title1-1 span, .title1-2 span{ /* 텍스트 배경 */
   display: block;
   position: absolute;
   z-index: 50;
@@ -208,27 +241,36 @@ nav ul li:hover span{
   /* width: 425px; -> jQuery에서 조정*/ 
   width: 0;
   height: 96px;
+  background: var(--accent-color);
+}
+
+.title1-2 span{
+  top: 210px;
+  /* width: 640px; -> jQuery */
+  height: 155px;
   background: var(--main-color);
 }
 
-.title1-1 .sub{
+.title1-1 .sub, .title1-2 .sub{
   margin-top: 110px;
   font-size: 16px;
   line-height: 26px;
   color: var(--white-color);
 }
 
-.title1-1 .sub>strong{ /* 강조 텍스트 */
+.title1-2 .sub{margin-top: 160px;}
+
+.title1-1 .sub>strong, .title1-2 .sub>strong{ /* 강조 텍스트 */
   font-size: 20px;
   color: var(--white-color);
 }
 
-.header-navi.navi1-1{
+.header-navi.navi1-1, .header-navi.navi1-2{
   width: 270px;
   top: 690px;
 }
 
-/* ============ hotel: 1-2 ============ */
+.header-navi.navi1-2{width: 320px;}
 
 
 /* || dining || */

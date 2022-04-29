@@ -11,16 +11,25 @@ function intro(){
 // hotel 1-1: 타이틀 배경 효과
 function titleIntro(){
   $(".title1-1 span").stop().animate({width:"425px"},1000);
+  $(".title1-2 span").stop().animate({width:"640px"},1000);
 }
 
 $(document).ready(function(){
-  // navbar scroll 효과
+  // navbar scroll 효과 + top btn
   $(window).scroll(function(){
     if($(window).scrollTop() > 100){
       $(".header-content-fixed").css("background","rgb(33, 32, 30, 0.7)");
+      $("#top_btn").fadeIn();
     } else {
       $(".header-content-fixed").css("background","var(--black-color)");
+      $("#top_btn").fadeOut();
     }
+  });
+
+  // top btn 클릭시 부드럽게 올라가는
+  $("#top_btn").click(function(){
+    $("html, body").animate({scrollTop : 0}, 600);
+    return false;
   });
 
   // hotel 1-1: tab menu
@@ -46,16 +55,18 @@ $(document).ready(function(){
 
   function galleryImg(img_new){
     if(img_old != img_new){
-      $(".thumbs li").eq(img_old).css({"opacity":0.3});
-      $(".thumbs li").eq(img_new).css({"opacity":1});
-      $(".largeImg li").eq(img_old).stop().fadeOut(300); 
-      $(".largeImg li").eq(img_new).stop().fadeIn(300);
+      $(`.${galleryF} .thumbs li`).eq(img_old).css({"opacity":0.3});
+      $(`.${galleryF} .thumbs li`).eq(img_new).css({"opacity":1});
+      $(`.${galleryF} .largeImg li`).eq(img_old).stop().fadeOut(300); 
+      $(`.${galleryF} .largeImg li`).eq(img_new).stop().fadeIn(300);
     }
     img_old = img_new;
   }
 
   $(".thumbs li").click(function(){ /* 썸네일 버튼 클릭 */
-    img_new = $(this).index();
+    galleryF = $(this).parent().parent().parent().attr("class"); /* r1-1,r1-2..찾기 */
+    $(`.${galleryF} .gallery>a`).fadeIn(); /* prev/next btn 나타남 */
+    img_new = $(this).data("id");
     galleryImg(img_new);
   });
 

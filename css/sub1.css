@@ -122,6 +122,8 @@ section li.hotel2 .text{ /* hotel2 세부설정 */
   margin-bottom: 10px;
 }
 
+.tab-contents>li>.room-b>li .title{color: var(--black-color);}
+
 .tab-contents>li>ul>li .sub{ /* 서브 타이틀 */
   font-size: 18px;
   color: #999;
@@ -170,7 +172,7 @@ section li.hotel2 .text{ /* hotel2 세부설정 */
 }
 
 /* prev/next btn */
-.gallery>a{position: absolute;}
+.gallery>a{position: absolute; display:none;}
 
 .gallery>a.prev_btn{ /* 이전버튼 */
   top: 450px;
