@@ -8,8 +8,7 @@
 ***
 
 ***Sub page***
-
-✔︎ Hotel = 종합안내 + hotel1 + hotel2
+1. Hotel = 종합안내(1_hotel) + hotel1(1-1) + hotel2(1-2)
 * onload: 페이지 로드 애니메이션 효과
 * 탭 메뉴 + 갤러리(썸네일/좌우 버튼)
 * 
