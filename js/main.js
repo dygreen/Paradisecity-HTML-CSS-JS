@@ -24,6 +24,7 @@ function showUp(){
 
 
 $(document).ready(function(){
+
   // navbar scroll 효과 + top btn
   $(window).scroll(function(){
     if($(window).scrollTop() > 100){
@@ -41,7 +42,7 @@ $(document).ready(function(){
     return false;
   });
 
-  // hotel 1-1: tab menu
+  // === hotel 1-1: tab menu ===
   let button = $("#tab .tab-button>li");
   let content = $("#tab .tab-contents>li");
 
@@ -73,7 +74,7 @@ $(document).ready(function(){
   }
 
   $(".thumbs li").click(function(){ /* 썸네일 버튼 클릭 */
-    galleryF = $(this).parent().parent().parent().attr("class"); /* r1-1,r1-2..찾기 */
+    galleryF = $(this).parent().parent().parent().attr("class"); /* .r1-1, .r1-2..찾기 */
     $(`.${galleryF} .gallery>a`).fadeIn(); /* prev/next btn 나타남 */
     img_new = $(this).data("id");
     galleryImg(img_new);
@@ -95,7 +96,7 @@ $(document).ready(function(){
     galleryImg(img_new);
   });
 
-  // dining 2-1: 스크롤 애니메이션
+  // === dining 2-1: 스크롤 애니메이션 ===
   $(window).scroll(function(){
     let val = $(window).scrollTop();
     if(val > 600 && val < 1300){
@@ -115,6 +116,30 @@ $(document).ready(function(){
     } else if(val2 > 720){
       $("#dining2 .casual7, .casual8, .casual9").css("opacity","1").addClass("showUp");
     }
+  });
+
+  // === art-tainment: icon 효과 ===
+  let count = 1;
+  $(".container3 li .iconify").click(function(){
+    count++;
+    if(count % 2 === 0){
+      $(this).html("<span class='iconify' data-icon='majesticons:heart' data-width='24' data-height='24'></span>");
+    } else {
+      $(this).html("<span class='iconify' data-icon='majesticons:heart-line' data-width='24' data-height='24'></span>");
+    }
+  });
+
+  // 스크롤 애니메이션
+  $(window).scroll(function(){
+    let height = $(window).scrollTop();
+    console.log(height);
+
+    // 스크롤 위치에 따른 투명도 조절
+    let y = -122/23180 * height + 1220/190;
+    $(".container3 li").eq(0).css("opacity", y);
+    
+    // 크기 조절
+    
   });
 
 });

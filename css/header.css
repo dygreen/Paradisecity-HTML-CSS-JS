@@ -326,11 +326,38 @@ p.line{ /* 구분 선 */
 /* ############## art-tainment ############## */
 .header-caption .back3{
   width: 100%;
-  height: 400px;
-  background: url(../image/art.jpg) no-repeat top;
+  height: 500px;
+  background: url(../image/art.jpeg) no-repeat top;
   background-size: cover;
 }
 
+.header-caption .title3{
+  width: 1200px; 
+  margin:0 auto;
+  color: var(--white-color);
+  padding-top: 180px;
+  text-shadow: 3px 4px 7px rgba(33, 32, 30,0.8);
+}
+
+.header-caption .title3 p:first-child{
+  font-family: 'Eoe_Zno_L';
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -5px;
+}
+
+.header-caption .title3 p:last-child{
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.header-navi.navi3{ /* navi */
+  top: -50px;
+  width: 280px;
+}
 
 /* ############## wedding ############## */
 .header-caption .back4{

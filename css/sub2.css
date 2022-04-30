@@ -15,3 +15,88 @@ body{
   background: var(--white-color);
   width: 100%;
 }
+
+/* =========== art-tainment =========== */
+section#art{width: 1200px; margin: 100px auto;}
+
+#art .intro{
+  font-size: 50px;
+  text-align: center;
+  color: var(--grey-color);
+}
+
+#art .line{ /* 선 */
+  color: var(--main-color);
+  position: absolute;
+  top: 800px;
+  left: 934px;
+}
+
+/* card */
+.container3{height: 3500px;}
+
+.container3 li{
+  position: sticky;
+  top: 130px;
+  transition: all 0.3s;
+}
+
+.container3 .block{ /* 텍스트 박스 */
+  position: absolute;
+  background: var(--main-color);
+  width: 1100px;
+  height: 0;
+  left: 50px;
+  bottom: 0;
+  transition: all 0.3s;
+}
+
+.container3 li:hover .block{height: 180px;}
+
+.container3 .sub{ /* 서브 설명 */
+  font-size: 18px;
+  color: var(--white-color);
+  margin-top: 26px;
+  margin-left: 20px;
+  line-height: 24px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.container3 .sub4{
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 26px;
+}
+
+.container3 .sub5{margin-top: 36px; font-size: 17px;}
+
+.container3 li:hover .sub{opacity:1;}
+
+.container3 li .iconify{ /* 하트 아이콘 */
+  position: absolute;
+  font-size: 40px;
+  color: var(--white-color);
+  right: 20px;
+  top: 40px;
+  cursor: pointer;
+}
+
+
+.container3 li p.title{ /* 타이틀 */
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  font-size: 90px;
+  font-family: 'Eoe_Zno_L';
+  font-weight: bold;
+  letter-spacing: -5px;
+  color: var(--white-color);
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.4);
+}
+
+.container3 li img{ /* 이미지 */
+  width: 1100px;
+  height: 610px;
+  margin-left: 50px;
+}
