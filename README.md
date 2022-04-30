@@ -17,5 +17,5 @@
 * scroll 효과: scroll 위치에 따른 요소 애니메이션 효과(위와 동일)
 
 3. Art-tainment
-* scroll효과: scroll 위치에 따라 요소 투명도/크기 조절
-* 
+* position: sticky 
+* scroll효과: scroll 위치에 따라 요소 투명도/크기 조절 
