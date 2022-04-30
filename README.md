@@ -15,3 +15,7 @@
 2. Dining = 종합안내(2_dining) + dining1(2-1) + dining2(2-2)
 * onload: 페이지 로드 애니메이션 효과(요소가 등장+올라옴)
 * scroll 효과: scroll 위치에 따른 요소 애니메이션 효과(위와 동일)
+
+3. Art-tainment
+* scroll효과: scroll 위치에 따라 요소 투명도/크기 조절
+* 
