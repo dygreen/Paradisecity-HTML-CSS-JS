@@ -33,7 +33,7 @@ section#art{width: 1200px; margin: 100px auto;}
 }
 
 /* card */
-.container3{height: 3500px;}
+.container3{height: 3200px;}
 
 .container3 li{
   position: sticky;
@@ -48,6 +48,7 @@ section#art{width: 1200px; margin: 100px auto;}
   height: 0;
   left: 50px;
   bottom: 0;
+  border-radius: 10px;
   transition: all 0.3s;
 }
 
@@ -82,15 +83,15 @@ section#art{width: 1200px; margin: 100px auto;}
   cursor: pointer;
 }
 
-
 .container3 li p.title{ /* 타이틀 */
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 80px;
   font-size: 90px;
-  font-family: 'Eoe_Zno_L';
+  font-family: 'YUniverse-B';
   font-weight: bold;
-  letter-spacing: -5px;
+  letter-spacing: -7px;
+  line-height: 80px;
   color: var(--white-color);
   text-shadow: 6px 6px 0px rgba(0,0,0,0.4);
 }
@@ -99,4 +100,6 @@ section#art{width: 1200px; margin: 100px auto;}
   width: 1100px;
   height: 610px;
   margin-left: 50px;
+  border-radius: 10px;
+  cursor: pointer;
 }

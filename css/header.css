@@ -1,5 +1,11 @@
 /* =========== header style =========== */
 @font-face {
+  font-family: 'YUniverse-B';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
 	font-family: 'Eoe_Zno_L';
 	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff');
 	font-weight: normal;
@@ -130,7 +136,7 @@ nav ul li span{ /* 가로선 */
   display: block;
   width: 0px;
   height: 2px;
-  background-image:linear-gradient(to right,transparent 0%,rgba(99, 201, 207,0.9) 50%,transparent 100%);
+  background: var(--main-color);
   position: absolute;
   top: 37px;
   left: 50%;
@@ -139,7 +145,7 @@ nav ul li span{ /* 가로선 */
 }
 
 nav ul li:hover span{
-  width: 60%;
+  width: 50%;
   opacity: 1;
 }
 
@@ -164,20 +170,20 @@ nav ul li:hover span{
   width: 1200px; 
   margin:0 auto;
   color: var(--white-color);
-  padding-top: 130px;
+  padding-top: 120px;
   text-shadow: 3px 4px 7px rgba(33, 32, 30,0.8);
 }
 
 .header-caption .text p:first-child{
-  font-family: 'Eoe_Zno_L';
-  font-size: 100px;
+  font-family: 'YUniverse-B';
+  font-size: 110px;
   font-weight: bold;
+  letter-spacing: -5px;
   text-align: center;
 }
 
 .header-caption .text p:last-child{
   font-size: 20px;
-  margin-top: 15px;
   margin-left: 5px;
   text-align: center;
 }
@@ -213,22 +219,23 @@ nav ul li:hover span{
 
 .title1-1>p, .title1-2>p{
   position: absolute;
-  top: 220px;
+  top: 205px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
-.title1-2>p{top: 210px;}
+.title1-2>p{top: 218px;}
 
 .title1-1 .main, .title1-2 .main{
-  font-family: 'Eoe_Zno_L';
-  font-size: 100px;
-  letter-spacing: -5px;
+  font-family: 'YUniverse-B';
+  font-size: 110px;
+  letter-spacing: -10px;
   position: relative;
   z-index: 100;
   color: var(--white-color);
 }
 
 .title1-2 .main{
+  letter-spacing: -6px;
   font-size: 85px;
   line-height: 75px;
 }
@@ -238,7 +245,7 @@ nav ul li:hover span{
   position: absolute;
   z-index: 50;
   top: 220px;
-  /* width: 425px; -> jQuery에서 조정*/ 
+  /* width: 435px; -> jQuery에서 조정*/ 
   width: 0;
   height: 96px;
   background: var(--accent-color);
@@ -247,12 +254,12 @@ nav ul li:hover span{
 .title1-2 span{
   top: 210px;
   /* width: 640px; -> jQuery */
-  height: 155px;
+  height: 165px;
   background: var(--main-color);
 }
 
 .title1-1 .sub, .title1-2 .sub{
-  margin-top: 110px;
+  margin-top: 130px;
   font-size: 16px;
   line-height: 26px;
   color: var(--white-color);
@@ -335,21 +342,20 @@ p.line{ /* 구분 선 */
   width: 1200px; 
   margin:0 auto;
   color: var(--white-color);
-  padding-top: 180px;
+  padding-top: 160px;
   text-shadow: 3px 4px 7px rgba(33, 32, 30,0.8);
 }
 
 .header-caption .title3 p:first-child{
-  font-family: 'Eoe_Zno_L';
-  font-size: 100px;
+  font-family: 'YUniverse-B';
+  font-size: 110px;
   font-weight: bold;
   text-align: center;
-  letter-spacing: -5px;
+  letter-spacing: -10px;
 }
 
 .header-caption .title3 p:last-child{
   font-size: 20px;
-  margin-top: 15px;
   margin-left: 5px;
   text-align: center;
 }

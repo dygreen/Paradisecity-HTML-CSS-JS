@@ -10,7 +10,7 @@ function intro(){
 
 // hotel 1-1: 타이틀 배경 효과
 function titleIntro(){
-  $(".title1-1 span").stop().animate({width:"425px"},1000);
+  $(".title1-1 span").stop().animate({width:"435px"},1000);
   $(".title1-2 span").stop().animate({width:"640px"},1000);
 }
 
@@ -134,12 +134,38 @@ $(document).ready(function(){
     let height = $(window).scrollTop();
     console.log(height);
 
-    // 스크롤 위치에 따른 투명도 조절
+    // 스크롤 위치에 따른 투명도 조절 : 1
     let y = -122/23180 * height + 1220/190;
     $(".container3 li").eq(0).css("opacity", y);
-    
-    // 크기 조절
-    
+    // 크기 조절 :1
+    let z = -1/950 * height + 1980/950;
+    if(height > 1030 && height < 1660){
+      $(".container3 li").eq(0).css("transform",`scale(${z})`);
+    }
+
+    // 2
+    let y2 = -1/200 * height + 186/20;
+    $(".container3 li").eq(1).css("opacity", y2);
+    let z2 = -1/1000 * height + 266/100;
+    if(height >= 1660 && height < 2310){
+      $(".container3 li").eq(1).css("transform",`scale(${z2})`);
+    }
+
+    // 3
+    let y3 = -1/170 * height + 248/17;
+    $(".container3 li").eq(2).css("opacity", y3);
+    let z3 = -1/850 * height + 316/85;
+    if(height >= 2310 && height < 2940){
+      $(".container3 li").eq(2).css("transform",`scale(${z3})`);
+    }
+
+    // 4
+    let y4 = -1/140 * height + 308/14;
+    $(".container3 li").eq(3).css("opacity", y4);
+    let z4 = -1/700 * height + 364/70;
+    if(height >= 2940){
+      $(".container3 li").eq(3).css("transform",`scale(${z4})`);
+    }
   });
 
 });

@@ -1,11 +1,4 @@
 /* =========== footer style =========== */
-@font-face {
-	font-family: 'Eoe_Zno_L';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
 :root {
   /* Color */
   --white-color: #f7f7f7;
@@ -16,7 +9,6 @@
 }
 
 footer{
-  /* margin-top: 600px; */
   border-top: 1px solid var(--main-color);
   width: 100%;
   height: 200px;
