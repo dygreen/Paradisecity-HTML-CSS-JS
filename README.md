@@ -19,3 +19,7 @@
 3. Art-tainment
 * position: sticky 
 * scroll효과: scroll 위치에 따라 요소 투명도/크기 조절 
+
+4. Wedding
+* position: sticky로 이미지 고정 & 텍스트 스크롤 효과
+* 버튼 요소가 움직이는 탭 메뉴
