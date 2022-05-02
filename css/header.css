@@ -100,19 +100,20 @@ header .submit .login{
 header .submit .join{transition: all 0.3s;}
 
 /* navbar */
+/* gnb */
 nav{
   width: 100%;
   border-top: 1px solid var(--main-color);
   font-family: 'Eoe_Zno_L';
 }
 
-nav ul{
+nav>ul{
   width: 1200px;
   height: 50px;
   margin: 0 auto;
 }
 
-nav ul li{
+nav>ul>li{
   float: left;
   font-size: 16px;
   font-weight: bold;
@@ -122,17 +123,17 @@ nav ul li{
   position: relative;
 }
 
-nav ul li:first-child{margin-left: 245px;}
+nav>ul>li:first-child{margin-left: 245px;}
 
-nav ul li:hover a{color: var(--accent-color);}
+nav>ul>li:hover >a{color: var(--accent-color);}
 
-nav ul li a{
+nav>ul>li>a{
   display: block;
   width: 100%;
   line-height: 50px;
 }
 
-nav ul li span{ /* 가로선 */
+nav>ul>li>span{ /* 가로선 */
   display: block;
   width: 0px;
   height: 2px;
@@ -144,10 +145,35 @@ nav ul li span{ /* 가로선 */
   transition: all 0.4s;
 }
 
-nav ul li:hover span{
+nav>ul>li:hover span{
   width: 50%;
   opacity: 1;
 }
+
+/* sub menu */
+nav .sub-menu{
+  display: none;
+  position:absolute;
+	top:100%; /*주메뉴가 끝나는 지점에 바로 위치*/
+  left: 0px;
+	width: 129px;
+	height: 150px;
+	background: rgba(0,0,0, 0.728);
+  border-right: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+nav>ul>li>ul:first-of-type{border-left: 1px solid var(--main-color);}
+
+nav .sub-menu li{
+  padding: 15px 0;
+  transition: all 0.4s;
+}
+
+nav .sub-menu li:hover{background: var(--main-color);}
+
+nav .sub-menu li a{font-weight: 100;}
+nav .sub-menu li:hover a{font-weight: bold;}
 
 /* ****** 유동적인 부분 ****** */
 .header-caption{
@@ -373,5 +399,31 @@ p.line{ /* 구분 선 */
   background-size: cover;
 }
 
+.header-caption .title4{
+  width: 1200px; 
+  margin:0 auto;
+  color: var(--white-color);
+  padding-top: 120px;
+  text-shadow: 3px 4px 7px rgba(33, 32, 30,0.8);
+}
+
+.header-caption .title4 p:first-child{
+  font-family: 'YUniverse-B';
+  font-size: 110px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -10px;
+}
+
+.header-caption .title4 p:last-child{
+  font-size: 20px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.header-navi.navi4{ /* navi */
+  top: 410px;
+  width: 180px;
+}
 
 /* ############## activities ############## */
