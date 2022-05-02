@@ -36,6 +36,13 @@ $(document).ready(function(){
     }
   });
 
+  // sub menu slide 효과
+  $("nav>ul>li").hover(function(){
+    $("nav .sub-menu").stop().slideDown(500);
+  },function(){
+    $("nav .sub-menu").stop().slideUp(500);
+  });
+
   // top btn 클릭시 부드럽게 올라가는
   $("#top_btn").click(function(){
     $("html, body").animate({scrollTop : 0}, 600);
@@ -167,5 +174,25 @@ $(document).ready(function(){
       $(".container3 li").eq(3).css("transform",`scale(${z4})`);
     }
   });
+
+  // == wedding : tab ==
+  let button4 = $("#tab4 #tab-button4>li");
+  let content4 = $("#tab4 #tab-contents4>li");
+
+  for(let i = 0; i < button4.length; i++){
+    button4.eq(i).click(function(){
+      tab4(i);
+    });
+  }
+
+  function tab4(i){
+    let move4 = 100 + 100 * i;
+    $(".tab-highlight").animate({top:move4}); // tab box
+    button4.find("a").css("color","var(--black-color)"); //탭의 모든 글자색
+    button4.find("a").eq(i).css("color", "var(--white-color"); // 선택탭 글자색
+    content4.removeClass("show");
+    content4.eq(i).addClass("show");
+  }
+
 
 });
