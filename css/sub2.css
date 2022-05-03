@@ -259,3 +259,167 @@ ul#tab-button4 li:first-child{border-top: 1px solid #bfbfbf;}
   font-size: 40px;
   margin-bottom: 15px;
 }
+
+/* =========== activities =========== */
+/* visual : slide */
+#visual5{
+  width: 1200px; 
+  margin: 200px auto; 
+  margin-bottom: 0;
+  position: relative;
+}
+
+#visual5 .text5{text-align: center;}
+
+.text5 .title{
+  font-size: 50px;
+  color: var(--main-color);
+}
+
+#visual5 .line2{ /* 선 */
+  color: #ccc;
+  position: absolute;
+  top: 70px;
+  right: 570px;
+}
+
+.text5 .subject{
+  font-family: 'Eoe_Zno_L';
+  margin-top: 100px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.text5 .sub{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--grey-color);
+}
+
+/* slide */
+#slideUp5{
+  position: relative;
+  width: 1120px;
+  height: 545px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#slideUp5 .simage5 ul{position: absolute;}
+
+/* 하단 버튼 */
+.bottom-btn5{
+	position: absolute;
+	bottom: 340px;
+	right: 15px;
+}
+
+.bottom-btn5 ul li{ /* 버튼 설정 */
+	background: #999;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 7px 0;
+	cursor: pointer;
+}
+
+.bottom-btn5 ul li.activeUp{ /* 버튼 선택 */
+	background: var(--main-color);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+/* up/down 버튼 */
+.side-btn5 .up-btn { /* up */
+	position: absolute;
+	top: 260px;
+	right: 14px;
+	width: 17px;
+	height: 32px;
+	background: url(../image/up_btn.png) no-repeat;
+}
+
+.side-btn5 .down-btn { /* down */
+	position: absolute;
+	bottom: 150px;
+	right: 14px;
+	width: 17px;
+	height: 32px;
+	background: url(../image/down_btn.png) no-repeat;
+}
+
+.line5{ /* 구분선 */
+  margin: 50px 0;
+  padding-top: 80px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* activities: section */
+section ul#act5 li{
+  width: 350px;
+  height: 530px;
+  margin: 30px 25px;
+  float: left;
+  overflow: hidden;
+  border-radius: 5px; 
+}
+
+ul#act5 img{
+  border-radius: 5px; 
+  transition: all 0.3s;
+}
+
+ul#act5 img:hover{transform: scale(1.05);}
+
+ul#act5 .text1{font-size: 15px;}
+
+ul#act5 .text1 .title{
+  font-family: 'Eoe_Zno_L';
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+ul#act5 .text1 .title span{ /* 숫자 원 */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: -2px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  line-height: 18px;
+  font-size: 14px;
+  color: var(--main-color);
+  text-align: center;
+}
+
+ul#act5 .text1 .sub{
+  font-family: 'Eoe_Zno_L';
+  color: #999;
+  text-indent: 10px;
+  line-height: 21px;
+  letter-spacing: -1px;
+}
+
+ul#act5 .text2{margin-top: 20px;}
+
+ul#act5 .text2 .info span:first-of-type,
+ul#act5 .text2 .mission span:first-of-type{
+  display: inline-block;
+  width: 64px;
+  height: 25px;
+  font-family: 'Eoe_Zno_L';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+ul#act5 .text2 .mission span:last-of-type{
+  display: inline-block;
+  width: 280px;
+}

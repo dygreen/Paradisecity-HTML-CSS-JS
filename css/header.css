@@ -427,3 +427,50 @@ p.line{ /* 구분 선 */
 }
 
 /* ############## activities ############## */
+.header-caption .back5{ /* 이미지 배경 */
+  width: 100%;
+  height: 300px;
+  background: url(../image/activities.jpg) no-repeat top;
+  background-size: cover;
+}
+
+.header-caption .title5{ 
+  position: relative;
+  width: 1200px; 
+  margin:0 auto;
+  color: var(--white-color);
+  padding-top: 180px;
+  z-index: 100;
+}
+
+.header-caption .title5 p:first-child{
+  font-family: 'YUniverse-B';
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -6px;
+}
+
+.header-caption .title5 p:last-child{
+  font-size: 19px;
+  line-height: 26px;
+  margin-left: 5px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.back5 .box5{ /* 색 배경 */
+  position: absolute;
+  top: 130px;
+  left: 650px;
+  width: 600px;
+  height: 300px;
+  background: rgba(156, 131, 106, 0.9);
+  border: 5px solid var(--white-color);
+  z-index: 10;
+}
+
+.header-navi.navi5{ /* navi */
+  top: 310px;
+  width: 190px;
+}

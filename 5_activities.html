@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/sub1.css">
   <link rel="stylesheet" href="css/sub2.css">
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 <body>
+  <!-- top btn -->
+  <div id="top_btn"><a href="#" class="active"></a></div>
+
   <div id="wrap">
     <!-- header -->
     <header class="s-header">
@@ -26,7 +27,7 @@
             </a>
             <div class="submit">
               <a href="login.html" class="login">로그인</a>
-              <a href="login.html" class="join">회원가입</a>
+              <a href="login.html" class="join">예약확인</a>
             </div>
           </div>
           <!-- navbar -->
@@ -54,23 +55,209 @@
 
       <!-- 유동적인 부분: caption-->
       <div class="header-caption">
-        <div class="back">
-          <div class="text">
-            <p>ACTIVITIES</p>
-            <p>파라다이스시티 곳곳에 숨겨져 있는<br>
-              다양한 추천 코스를 만나보세요.</p>
-          </div>
+        <div class="back5">
+          <div class="title5">
+            <p class="main">ACTIVITIES</p>
+            <p class="sub">아름다운 인천의 다양한 명소와<br>
+              즐길거리 가득한 파라다이스시티 투어 코스를 만나보세요.</p>
+            </div>
+          <div class="box5"></div> <!-- 색 배경 -->
         </div>
       </div>
       <!-- navigater -->
-      <div class="header-navi">
-        <p>HOME &gt; <a href="5_activities.html">ACTIVITIES</a></p>
+      <div class="header-navi navi5">
+        <p><a href="index.html">HOME</a> &gt; ACTIVITIES</p>
       </div>
     </header>
 
+    <!-- visual : slide -->
+    <div id="visual5">
+      <!-- text -->
+      <div class="text5">
+        <p class="title">추천코스</p>
+        <span class="iconify line2" data-icon="ci:line-xl" data-width="60" data-height="60"></span> <!-- 세로선 -->
+        <p class="subject">" 달콤한 랑만(浪漫)도시 코스 "</p>
+        <p class="sub">아트스페이스 (1F) – 아트가든 시퀸월 (1F) – 씨메르 – 크로마 빛의 터널 (1F) – 라스칼라 (1F) – 음악분수(1F) – 라운지 파라다이스 (1F)
+        </p>
+      </div>
+
+      <div id="slideUp5">
+        <!-- 이미지 -->
+        <div class="simage5">
+          <ul>
+            <li><img src="image/act5-1.jpg" alt="slide img1"></li>
+            <li><img src="image/act5-2.jpg" alt="slide img2"></li>
+            <li><img src="image/act5-3.jpg" alt="slide img3"></li>
+            <li><img src="image/act5-4.jpg" alt="slide img4"></li>
+            <li><img src="image/act5-5.jpg" alt="slide img5"></li>
+            <li><img src="image/act5-6.jpg" alt="slide img6"></li>
+            <li><img src="image/act5-7.jpg" alt="slide img7"></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 하단 버튼 -->
+      <div class="bottom-btn5">
+        <ul>
+          <li class="activeUp"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+      <!-- up/down 버튼 -->
+      <div class="side-btn5">
+        <a href="#none" class="up-btn"></a>
+        <a href="#none" class="down-btn"></a>
+      </div>
+
+      <div class="line5"></div> <!-- 구분선 -->
+    </div>
+
     <!-- section -->
     <section>
-
+      <ul id="act5" class="clear">
+        <!-- 1 -->
+        <li class="act5-1">
+          <img src="image/act5-crs-1.jpg" alt="activities course1">
+          <div class="text1">
+            <p class="title"><span>1</span>아트스페이스</p>
+            <p class="sub">아트테인먼트 리조트 파라다이스시티에서 아트갤러리를 방문하지 않을 수 없죠. 상설 전시 중인 박승모의 '니케' 와 제프쿤스의 '게이징볼' 작품 외에 다양한 기획 전시를 즐기 실 수 있습니다.<br>
+            바쁜 일상에서 잠시 벗어나 내 안의 예술적 감성을 잔잔하게 불러일으키는 시간이 되시길 바랍니다.</p>
+          </div>
+          <div class="text2">
+            <p class="info">
+              <span>info</span>
+              <span>아트스페이스 자세히보기</span>
+            </p>
+            <p class="mission">
+              <span>Mission</span>
+              <span>게이징볼에 비친 우리 모습 사진에 담기</span>
+            </p>
+          </div>
+        </li>
+        <!-- 2 -->
+        <li class="act5-2">
+          <img src="image/act5-crs-2.jpg" alt="activities course2">
+          <div class="text1">
+            <p class="title"><span>2</span>아트가든 시퀸월</p>
+            <p class="sub">바람이 부는 날엔 아트가든의 시퀸월 '물결(Ripples)'
+            로 오세요. 찰랑찰랑, 반짝반짝 바람이 훑고 가는 모양대로 물결치는 시퀸(반짝이는 조각)월 앞에서 멋진 사진 한장 찍는 것 잊지 마시구요!</p>
+          </div>
+          <div class="text2">
+            <p class="info">
+              <span>info</span>
+              <span>아트가든 시퀸월 자세히보기</span>
+            </p>
+            <p class="mission">
+              <span>Mission</span>
+              <span>아트가든에 앉아서 연인과 바람 노래 같이 듣기</span>
+            </p>
+          </div>
+        </li>
+        <!-- 3 -->
+        <li class="act5-3">
+          <img src="image/act5-crs-3.jpg" alt="activities course3">
+          <div class="text1">
+            <p class="title"><span>3</span>씨메르</p>
+            <p class="sub">프랑스어로 하늘을 뜻하는 Ciel과 바다를 뜻하는 Mer를 합친 고품격 힐링스파 ‘씨메르’는 연인들에게는 달콤한 힐링의 장소로 최고입니다.<br>
+            고요한 동굴 속 릴랙스 CAVE SPA, 꿈과 현실의 경계<br>VIRTUAL SPA, 선셋 포토존 야외 인피니티풀, 아찔한 스피드 아쿠아 슬라이드 등을 갖춘 아쿠아스파존과 편백나무룸, 아이스룸, 자수정방, 소금방 등을 갖춘 찜질스파존을 즐기다보면 지쳤던 몸과 마음이 평온하게 릴랙스 될 거에요.</p>
+          </div>
+          <div class="text2">
+            <p class="info">
+              <span>info</span>
+              <span>씨메르 자세히보기</span>
+            </p>
+            <p class="mission">
+              <span>Mission</span>
+              <span>금손 인증샷 남기기</span>
+            </p>
+          </div>
+        </li>
+        <!-- 4 -->
+        <li class="act5-4">
+          <img src="image/act5-crs-4.jpg" alt="activities course4">
+          <div class="text1">
+            <p class="title"><span>4</span>크로마 빛의 터널</p>
+            <p class="sub">푸른 잔디밭 너머로 강렬한 황금빛 건물, 세계적인 건축 설계사무소 MVRDV가 설계한 클럽 크로마입니다.<br>
+            커튼을 살짝 들어올린듯한 입구의 Lift 디자인으로 경쾌함을 더한 이곳은 저녁이 되면 더욱 화려해 지는데요. 거울 천장과 유리바닥 그리고 화려한 불빛으로 이뤄진 빛의 터널(passage of light)을 통해 파라다이스로 다가서는듯한 황홀함을 느낄 수 있을거에요.</p>
+          </div>
+          <div class="text2">
+            <p class="info">
+              <span>info</span>
+              <span>크로마 자세히보기</span>
+            </p>
+            <p class="mission">
+              <span>Mission</span>
+              <span>빛, 우리 그리고 추억을 담아 사진 남기기</span>
+            </p>
+          </div>
+        </li>
+        <!-- 5 -->
+        <li class="act5-5">
+          <img src="image/act5-crs-5.jpg" alt="activities course5">
+          <div class="text1">
+            <p class="title"><span>5</span>라스칼라</p>
+            <p class="sub">우리만의 로맨틱 디너는 이탈리안 파인다이닝 라스칼라에서 특별하게 즐겨 보세요.<br>
+            라스칼라의 시그니처 '비앙카 디 풍기‘ 피자와 랍스터 페투치니 파스타, 스테이크를 모두 즐길 수 있는 커플메뉴와 소믈리에 추천 와인 페어링과 함께라면 잊지 못할 식사가 될거에요.</p>
+          </div>
+          <div class="text2">
+            <p class="info">
+              <span>info</span>
+              <span>라스칼라 자세히보기</span>
+            </p>
+            <p class="mission">
+              <span>Mission</span>
+              <span>라스칼라 시그니처 버섯피자 맛보기
+              </span>
+            </p>
+          </div>
+        </li>
+        <!-- 6 -->
+        <li class="act5-6">
+          <img src="image/act5-crs-6.jpg" alt="activities course6">
+          <div class="text1">
+            <p class="title"><span>6</span>음악분수</p>
+            <p class="sub">호텔 정문에 자리한 음악분수는 로맨틱 프로포즈 장소로 적격인데요. 음악과 함께 분수가 춤을 출 때 사랑하는 이에게 꽃다발을 내밀며 사랑을 고백해 보세요.<br>
+            음악분수는 밤의 조명 아래 그 화려함이 배가 된답니다. 화려한 조명 속 펼쳐지는 분수쇼는 한편의 로맨틱 뮤지컬을 보는 듯한 경험을 선사합니다.<br>
+            저녁 식사 후 사랑하는 이와 함께 분수 뮤지컬 한편 어떠세요?</p>
+          </div>
+          <div class="text2">
+            <p class="info">
+              <span>info</span>
+              <span>음악분수 운영시간 (11시,15시,18시,21시)</span>
+            </p>
+            <p class="mission">
+              <span>Mission</span>
+              <span>음악분수가 시작되면 마음 전하기</span>
+            </p>
+          </div>
+        </li>
+        <!-- 7 -->
+        <li class="act5-7">
+          <img src="image/act5-crs-7.jpg" alt="activities course7">
+          <div class="text1">
+            <p class="title"><span>7</span>라운지 파라다이스</p>
+            <p class="sub">저녁의 여유 가득한 산책 후 은은한 음악이 흐르는 라운지 바에서 칵테일 한잔으로 하루를 마무리해 보세요.<br>
+            역동 속 절묘한 동양적 필선을 느낄 수 있는 작품 오수환의 '베리에이션', 특유의 색감을 가진 이슬 형태 도자기 작품 이가진의 'Dewdrop' 등의 아트콜렉션이 라운지 바를 더욱 프라이빗하고 예술적인 공간으로 만들어 준답니다.<br>
+            라운지 파라다이스에서 둘만의 달콤한 낭만 도시의 추억 남겨보세요.</p>
+          </div>
+          <div class="text2">
+            <p class="info">
+              <span>info</span>
+              <span>라운지 파라다이스 자세히보기</span>
+            </p>
+            <p class="mission">
+              <span>Mission</span>
+              <span>바를 배경으로 꿀뚝뚝 커플샷 남기기</span>
+            </p>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <!-- footer -->
@@ -98,5 +285,10 @@
       </div>
     </footer>
   </div>
+
+  <!-- Script Source -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
