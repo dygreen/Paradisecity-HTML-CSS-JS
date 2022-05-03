@@ -23,3 +23,6 @@
 4. Wedding
 * position: sticky로 이미지 고정 & 텍스트 스크롤 효과
 * 버튼 요소가 움직이는 탭 메뉴
+
+5. Activities
+* 위로 올라가는 자동 슬라이드(up|down|bottom button)
