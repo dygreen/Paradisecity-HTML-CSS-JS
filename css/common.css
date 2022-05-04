@@ -23,8 +23,7 @@
 }
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
 blockquote,pre,abbr,address,cite,code,del,dfn,em,img,
-ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
-fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
 article,aside,canvas,details,figcaption,figure,footer,header,hgroup,
 menu,nav,section,summary,time,mark,audio,video{margin:0; padding:0;}
 /*블록요소들을 이렇게 여백 0으로 초기화 시켜 모든 브라우저에서 앞으로 주는 여백이 

@@ -254,4 +254,21 @@ $(document).ready(function(){
     auto=setInterval(slideAuto,4000);
   });
 
+  //  == login : tab ==
+  let button6 = $("#tab6 #tab-button6>li");
+  let content6 = $("#tab6 #tab-contents6>li");
+
+  for(let i = 0; i < button6.length; i++){
+    button6.eq(i).click(function(){
+      tab6(i);
+    });
+  }
+
+  function tab6(i){
+    button6.removeClass("selected");
+    button6.eq(i).addClass("selected");
+    content6.removeClass("show");
+    content6.eq(i).addClass("show");
+  }
+
 });

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOTELS | 파라다이스시티</title>
+  <title>로그인 | 파라다이스시티</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/sub1.css">
   <link rel="stylesheet" href="css/sub2.css">
@@ -50,21 +50,86 @@
       </div>
 
       <!-- 유동적인 부분: caption-->
-      <div class="header-caption">
-        <div class="back">
-          <p>HOTELS</p>
-          <p>파라다이스시티를 대표하는 호텔을 만나보세요.</p>
-        </div>
-      </div>
       <!-- navigater -->
-      <div class="header-navi">
-        <p>HOME &gt; <a href="1_hotels.html">HOTELS</a></p>
+      <div class="header-navi navi6">
+        <p><a href="index.html">HOME</a> &gt; LOGIN</p>
       </div>
     </header>
 
     <!-- section -->
     <section>
+      <form>
+        <!-- 제목 텍스트 -->
+        <div class="title6">
+          <h1>Sign In</h1>
+          <p class="sub6">파라다이스시티에 오신 것을 환영합니다.<br>
+            로그인을 하시고 더 편리하게 이용하세요.</p>
+        </div>
+        
+        <!-- 로그인 폼 -->
+        <fieldset class="clear">
+          <!-- 1. 로그인 입력창 부분 -->
+          <div class="login-box1">
+            <div id="tab6">
+              <!-- tab button -->
+              <ul id="tab-button6" class="clear">
+                <li class="btn1 selected">회원</li>
+                <li class="btn2">비회원(예약확인)</li>
+              </ul>
 
+              <!-- tab contents -->
+              <ul id="tab-contents6">
+                <li class="cust show">
+                  <div class="user-mail"> <!-- 이메일 -->
+                    <p><input type="email" id="mail" placeholder="이메일" autofocus required></p>
+                  </div>
+                  <div class="user-pw"> <!-- 비밀번호 -->
+                    <p><input type="password" id="pw" placeholder="비밀번호"></p>
+                  </div>
+                  <input type="submit" value="로그인" class="login-btn"> <!-- 로그인 버튼 -->
+                  <div class="check-find clear">
+                    <div class="checkbox"> <!-- 체크박스 -->
+                      <input type="checkbox" id="auto" name="auto">
+                      <label for="auto">로그인 상태 유지</label>
+                    </div>
+                    <p class="id-find">아이디/비밀번호 찾기</p> <!-- 찾기 -->
+                  </div>
+                </li>
+
+                <li class="non-cust">
+                  <div class="user-num"> <!-- 예약번호 -->
+                    <p><input type="text" id="num" placeholder="예약번호"></p>
+                  </div>
+                  <div class="user-name"> <!-- 이름 -->
+                    <p><input type="text" id="name" placeholder="이름"></p>
+                  </div>
+                  <div class="user-tel"> <!-- 전화번호 -->
+                    <select class="tel1">
+                      <option>010</option>
+                      <option>011</option>
+                      <option>016</option>
+                      <option>017</option>
+                    </select>
+                    <input type="tel" id="tel2">
+                    <input type="tel" id="tel3">
+                  </div>
+                  <input type="submit" value="예약내역조회" class="search-btn"> <!-- 예약내역조회 -->
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2. 회원가입 유도 부분 -->
+          <div class="login-box2">
+            <img src="image/login.jpg" alt="login image">
+            <div class="join-message">
+              <p class="join1">아직 회원이 아니신가요?</p>
+              <p class="join2">회원이 되시면 파라다이스 리워즈 멤버십 회원으로서<br>더 큰 혜택과 편리함을 누릴 수 있습니다.</p>
+              <input type="submit" value="회원가입" class="join-btn">
+            </div>
+          </div>
+        </fieldset>
+      </form>
     </section>
 
     <!-- footer -->

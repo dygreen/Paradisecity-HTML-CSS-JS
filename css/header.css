@@ -197,7 +197,7 @@ nav .sub-menu li:hover a{font-weight: bold;}
   margin:0 auto;
   color: var(--white-color);
   padding-top: 120px;
-  text-shadow: 3px 4px 7px rgba(33, 32, 30,0.8);
+  text-shadow: 2px 1.5px 3px rgba(0,0,0,0.9);
 }
 
 .header-caption .text p:first-child{
@@ -369,7 +369,7 @@ p.line{ /* 구분 선 */
   margin:0 auto;
   color: var(--white-color);
   padding-top: 160px;
-  text-shadow: 3px 4px 7px rgba(33, 32, 30,0.8);
+  text-shadow: 2px 1.5px 3px rgba(0,0,0,0.9);
 }
 
 .header-caption .title3 p:first-child{
@@ -404,7 +404,7 @@ p.line{ /* 구분 선 */
   margin:0 auto;
   color: var(--white-color);
   padding-top: 120px;
-  text-shadow: 3px 4px 7px rgba(33, 32, 30,0.8);
+  text-shadow: 2px 1.5px 3px rgba(0,0,0,0.9);
 }
 
 .header-caption .title4 p:first-child{
@@ -439,6 +439,7 @@ p.line{ /* 구분 선 */
   width: 1200px; 
   margin:0 auto;
   color: var(--white-color);
+  text-shadow: 2px 1.5px 3px rgba(0,0,0,0.5);
   padding-top: 180px;
   z-index: 100;
 }
@@ -473,4 +474,10 @@ p.line{ /* 구분 선 */
 .header-navi.navi5{ /* navi */
   top: 310px;
   width: 190px;
+}
+
+/* ############## login ############## */
+.header-navi.navi6{ /* navi */
+  top: -70px;
+  width: 150px;
 }

@@ -1,3 +1,5 @@
+/* ********* art, wedding, activities ********* */
+
 @import url(common.css);
 @import url(header.css);
 @import url(footer.css);
@@ -17,7 +19,7 @@ body{
 }
 
 /* =========== art-tainment =========== */
-section#art{width: 1200px; margin: 100px auto;}
+section#art{width: 1200px; margin: 60px auto;}
 
 #art .intro{
   font-size: 50px;
@@ -25,11 +27,18 @@ section#art{width: 1200px; margin: 100px auto;}
   color: var(--grey-color);
 }
 
+#art .info1{
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+  margin-top: 10px;
+}
+
 #art .line{ /* 선 */
   color: var(--main-color);
   position: absolute;
-  top: 800px;
-  left: 934px;
+  top: 780px;
+  left: 925px;
 }
 
 /* card */
@@ -43,7 +52,8 @@ section#art{width: 1200px; margin: 100px auto;}
 
 .container3 .block{ /* 텍스트 박스 */
   position: absolute;
-  background: var(--main-color);
+  /* background: var(--accent-color); */
+  background: rgba(99, 202, 207, 0.9);
   width: 1100px;
   height: 0;
   left: 50px;
@@ -61,6 +71,7 @@ section#art{width: 1200px; margin: 100px auto;}
   margin-left: 20px;
   line-height: 24px;
   opacity: 0;
+  text-shadow: 2px 1.5px 0px rgba(0,0,0,0.1);
   transition: all 0.3s;
 }
 
@@ -154,7 +165,7 @@ ul#wedding4 li .text p{ /* 서브 텍스트 */
 p.title4{ /* 타이틀 */
   width: 1200px;
   margin: 0 auto;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
@@ -236,7 +247,7 @@ ul#tab-button4 li:first-child{border-top: 1px solid #bfbfbf;}
   color: var(--white-color);
   font-size: 18px;
   line-height: 23px;
-  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 1.5px 3px rgba(0,0,0,0.5);
   z-index: 100;
 }
 
@@ -250,7 +261,7 @@ ul#tab-button4 li:first-child{border-top: 1px solid #bfbfbf;}
   bottom: -10px;
   right: -10px;
   border: 1px solid var(--white-color);
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(47, 47, 47, 0.4);
   z-index: -1;
 }
 
