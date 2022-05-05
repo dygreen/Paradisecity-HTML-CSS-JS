@@ -49,6 +49,7 @@ $(document).ready(function(){
     return false;
   });
 
+
   // === hotel 1-1: tab menu ===
   let button = $("#tab .tab-button>li");
   let content = $("#tab .tab-contents>li");
@@ -103,6 +104,7 @@ $(document).ready(function(){
     galleryImg(img_new);
   });
 
+
   // === dining 2-1: 스크롤 애니메이션 ===
   $(window).scroll(function(){
     let val = $(window).scrollTop();
@@ -124,6 +126,7 @@ $(document).ready(function(){
       $("#dining2 .casual7, .casual8, .casual9").css("opacity","1").addClass("showUp");
     }
   });
+
 
   // === art-tainment: icon 효과 ===
   let count = 1;
@@ -175,7 +178,8 @@ $(document).ready(function(){
     }
   });
 
-  // == wedding : tab ==
+
+  // === wedding : tab ===
   let button4 = $("#tab4 #tab-button4>li");
   let content4 = $("#tab4 #tab-contents4>li");
 
@@ -194,7 +198,8 @@ $(document).ready(function(){
     content4.eq(i).addClass("show");
   }
 
-  // == activities : slide ==
+
+  // === activities : slide ===
   let img = $(".simage5 ul");
   let img_list = $(".simage5 ul li");
   let btn = $(".bottom-btn5 ul li");
@@ -254,7 +259,8 @@ $(document).ready(function(){
     auto=setInterval(slideAuto,4000);
   });
 
-  //  == login : tab ==
+
+  //  === login : tab ===
   let button6 = $("#tab6 #tab-button6>li");
   let content6 = $("#tab6 #tab-contents6>li");
 
@@ -271,4 +277,60 @@ $(document).ready(function(){
     content6.eq(i).addClass("show");
   }
 
+
+  //  === index(main) : accordion ===
+  /* $("section dl dt").hover(function(){
+    $(this).animate({marginLeft:"-20%"},500);
+    $(this).find("+dd").show("slow");
+  }, function(){
+    $(this).animate({marginLeft:"0"},500);
+    $(this).find("+dd").hide("slow");
+  }); */
+  
+
+  /* $("section dl dt.main-tab1").mouseenter(function(){
+    $(this).animate({marginLeft:"-20%"},500);
+    $(this).find("+dd").show("slow");
+  });
+
+  $("section dl dt.main-tab1").mouseleave(function(){
+    $(this).animate({marginLeft:"0%"},500);
+    $(this).find("+dd").hide("slow");
+  }); */
+  
+  $("section dl dt.main-tab1").hover(function(){
+    $(this).find("+dd").show("slow");
+  }, function(){
+    $(this).find("+dd").hide("slow");
+  });
+
+  $("section dl dt.main-tab2").hover(function(){
+    $(this).find("+dd").css("width","60%").show("slow");
+  },function(){
+    $(this).find("+dd").hide("slow");
+  });
+
+  $("section dl dt.main-tab3").hover(function(){
+    $(this).find("+dd").css("width","40%").show("slow");
+  },function(){
+    $(this).find("+dd").hide("slow");
+  });
+
+  $("section dl dt.main-tab4").hover(function(){
+    /* $(this).find("+dd").addClass("main-bg").css("width","60%").show("slow"); */
+    $(this).css("float","right");
+    $("dl dt").find("+dd").css({"float":"right"/* ,"width":"60%" */});
+  },function(){
+    $/* (this).css("float","left");
+    $(this).find("+dd").css({"float":"left"}); */
+    // $(this).find("+dd").removeClass("main-bg");
+    $(this).find("+dd").hide("slow");
+  });
+
+  $("section dl dt.main-tab5").hover(function(){
+    $(this).find("+dd").addClass("main-bg2").css("width","80%").show("slow");
+  },function(){
+    $(this).find("+dd").removeClass("main-bg2");
+    $(this).find("+dd").hide("slow");
+  });
 });
