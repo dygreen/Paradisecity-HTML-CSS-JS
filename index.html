@@ -10,26 +10,52 @@
   <link rel="stylesheet" href="css/sub2.css">
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
-<body>
+<body id="main-body">
   <div id="wrap">
     <!-- header -->
     <header>
-
+      <div id="main-top">
+        <!-- 메뉴 토글 버튼 -->
+        <span class="menu-toggle-btn"><span></span></span>
+        <!-- 로고 -->
+        <a href="index.html" class="main-logo"><img src="image/main-logo.png" alt="paradise city"></a>
+        <!-- 로그인 아이콘 -->
+        <a href="login.html" class="main-login"><span class="iconify" data-icon="akar-icons:person"></span></a>
+        
+      </div>
+      
+      <!-- 메인 메뉴 -->
+      <div id="main-menu">
+        <ul class="main-gnb clear">
+          <li><a href="1_hotels.html">HOTELS</a>
+            <ul class="sub-menu">
+              <li><a href="1-1.html">PARADISE</a></li>
+              <li><a href="1-2.html">ART PARADISO</a></li>
+            </ul>
+          </li>
+          <li><a href="2_dining.html">DINING</a>
+            <ul class="sub-menu">
+              <li><a href="2-1.html">FINE DINE</a></li>
+              <li><a href="2-2.html">CASUAL DINE</a></li>
+            </ul>
+          </li>
+          <li><a href="3_art.html">ART-TAINMENT</a></li>
+          <li><a href="4_wedding.html">WEDDING</a></li>
+          <li><a href="5_activities.html">ACTIVITIES</a></li>
+        </ul>
+      </div>
     </header>
-
-    <!-- modal -->
-    <div id="modal">
-
-    </div>
 
     <!-- section -->
     <section>
       <dl class="clear">
         <!-- 1 -->
-        <dt class="main-tab1"></dt>
+        <dt class="main-tab1">
+          <span class="iconify" data-icon="icon-park-outline:hotel"></span>
+          <p>CLEAN<br>PARADISE</p>
+        </dt>
         <dd>
           <div class="main-content">
-            <h3 class="main-title">CLEAN<br>PARADISE</h3>
             <p class="main-sub">세계적으로 인증 받은 파라다이스시티!<br>
               GBAC STAR™과 Sharecare Health<br>
               Security VERIFIED™인증획득</p>
@@ -38,10 +64,12 @@
         </dd>
 
         <!-- 2 -->
-        <dt class="main-tab2"></dt>
+        <dt class="main-tab2">
+          <span class="iconify" data-icon="material-symbols:restaurant-rounded"></span>
+          <p>Restaurant</p>
+        </dt>
         <dd>
           <div class="main-content">
-            <h3 class="main-title">Restaurant<br>Fine Dining</h3>
             <p class="main-sub">미슐랭 스타 레스토랑부터 트렌디한 Bar까지,<br>
               호텔 파라다이스에서 펼쳐지는<br> 미식의 세계로 초대합니다.</p>
             <button><a href="2_dining.html">자세히 보기</a></button>
@@ -49,21 +77,25 @@
         </dd>
 
         <!-- 3 -->
-        <dt class="main-tab3"></dt>
+        <dt class="main-tab3">
+          <span class="iconify" data-icon="maki:amusement-park"></span>
+          <p>THEME PARK</p>
+        </dt>
         <dd>
           <div class="main-content">
-            <h3 class="main-title">THEME PARK<br>WONDERBOX</h3>
             <p class="main-sub">환상적인 공연과 어트랙션이 가득<br>
-              꿈이 현실로 이루어지는 곳</p>
+              꿈이 현실로 이루어지는 곳입니다.</p>
             <button><a href="3_art.html">자세히 보기</a></button>
           </div>
         </dd>
 
         <!-- 4 -->
-        <dt class="main-tab4"></dt>
+        <dt class="main-tab4">
+          <span class="iconify" data-icon="ic:outline-emoji-events"></span>
+          <p>CONVENTION</p>
+        </dt>
         <dd>
           <div class="main-content">
-            <h3 class="main-title">CONVENTION</h3>
             <p class="main-sub">국제회의, 기업행사, 시상식, 이벤트, 웨딩 등<br> 다양한 행사를 개최할 수 있는<br>
             국내 특급호텔 기준 최대 규모의 컨벤션 시설입니다.</p>
             <button><a href="4_wedding.html">자세히 보기</a></button>
@@ -71,10 +103,12 @@
         </dd>
 
         <!-- 5 -->
-        <dt class="main-tab5"></dt>
+        <dt class="main-tab5">
+          <span class="iconify" data-icon="map:art-gallery"></span>
+          <p>INSPIRATION</p>
+        </dt>
         <dd>
           <div class="main-content">
-            <h3 class="main-title">INSPIRATION</h3>
             <p class="main-sub">발 딛는 순간, 내 안에 잠재해 있던<br>
               예술적 영감이 살아납니다.</p>
             <button><a href="5_activities.html">자세히 보기</a></button>

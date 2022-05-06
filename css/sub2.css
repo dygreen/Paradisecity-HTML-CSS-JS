@@ -52,7 +52,6 @@ section#art{width: 1200px; margin: 60px auto;}
 
 .container3 .block{ /* 텍스트 박스 */
   position: absolute;
-  /* background: var(--accent-color); */
   background: rgba(99, 202, 207, 0.9);
   width: 1100px;
   height: 0;
