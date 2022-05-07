@@ -125,8 +125,6 @@ nav>ul>li{
 
 nav>ul>li:first-child{margin-left: 245px;}
 
-nav>ul>li:hover >a{color: var(--accent-color);}
-
 nav>ul>li>a{
   display: block;
   width: 100%;
@@ -391,6 +389,7 @@ p.line{ /* 구분 선 */
   width: 280px;
 }
 
+
 /* ############## wedding ############## */
 .header-caption .back4{
   width: 100%;
@@ -425,6 +424,7 @@ p.line{ /* 구분 선 */
   top: 410px;
   width: 180px;
 }
+
 
 /* ############## activities ############## */
 .header-caption .back5{ /* 이미지 배경 */
@@ -475,6 +475,7 @@ p.line{ /* 구분 선 */
   top: 310px;
   width: 190px;
 }
+
 
 /* ############## login ############## */
 .header-navi.navi6{ /* navi */

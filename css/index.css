@@ -20,11 +20,10 @@ body#main-body{background: black;}
   top: 0;
   width: 100%;
   height: 75px;
-  /* background: linear-gradient(to bottom, black 40%, transparent); */
   background: rgba(33, 32, 30, 0.9);
   border-top: 1px solid var(--main-color);
   border-bottom: 1px solid var(--main-color);
-  z-index: 100;
+  z-index: 200;
 }
 
 .menu-toggle-btn{  /*전체메뉴버튼*/  
@@ -48,7 +47,7 @@ body#main-body{background: black;}
   top:-2px;
   width:70%;
   height:4px;
-  background: var(--white-color);
+  background: #999;
 	content:'';
   margin-left:15%;
   border-radius: 10px;
@@ -60,7 +59,7 @@ body#main-body{background: black;}
   left:0;
   width:70%;
   height:4px;
-  background: var(--white-color);
+  background: #999;
 	content:'';
   transition:all 0.3s;
   margin-left:15%;
@@ -82,7 +81,7 @@ a.main-logo{ /* 로고 */
 }
 
 a.main-login{ /* 로그인 아이콘 */
-  color: var(--white-color);
+  color: #999;
   font-size: 35px;
   position: absolute;
   top: 20px;
@@ -98,6 +97,7 @@ a.main-login{ /* 로그인 아이콘 */
   background:rgba(33, 32, 30, 0.9);
   color: var(--main-color);
   display: none;
+  z-index: 100;
 }
 
 #main-menu>ul{
@@ -131,7 +131,7 @@ section dl{
   height: 1000px;
   margin: 0 auto;
   overflow: hidden;
-  background: url(../image/main-bg1.jpeg) no-repeat center top;
+  background: url(../image/main-bg1.jpeg) no-repeat center;
   background-size: cover;
 }
 
@@ -143,31 +143,21 @@ section dl dt{ /* 탭 부분 */
   cursor: pointer;
   border-right: 1px solid var(--grey-color);
   box-sizing: border-box;
-  color: white;
+  color: #fcfcfc;
+  font-family: 'YUniverse-B';
+  font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 30px;
+  background: rgba(33, 32, 30, 0.5);
   transition: all 0.4s;
 }
-
 dl dt:last-of-type{border-right: none;}
+dl dt:hover{background: var(--black-color);}
+
+dl dt.active{background: rgba(156, 131, 106, 0.7);}
+dl dt.active:hover{background: var(--main-color);}
 
 /* 썸네일 이미지 설정 */
-section dl dt.main-tab1{background: rgba(156, 131, 106, 0.7);}
-section dl dt.main-tab1:hover{background: var(--main-color);}
-
-section dl dt.main-tab2{background: rgba(102, 102, 102, 0.7);}
-section dl dt.main-tab2:hover{background: var(--grey-color);}
-
-section dl dt.main-tab3{background: rgba(33, 32, 30, 0.5);}
-section dl dt.main-tab3:hover{background: var(--black-color);}
-
-section dl dt.main-tab4{background: rgba(156, 131, 106, 0.7);}
-section dl dt.main-tab4:hover{background: var(--main-color);}
-
-section dl dt.main-tab5{background: rgba(33, 32, 30, 0.5);}
-section dl dt.main-tab5:hover{background: var(--black-color);}
-
 dl dt .iconify{ /* 아이콘 */
   margin-top: 350px;
   margin-left: 30px;
@@ -223,6 +213,163 @@ dd:nth-of-type(5) .main-content{margin-top: 450px;}
   border: none;
 }
 
+
 /* ============ footer ============ */
+footer#banner{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 170px;
+  background: #fcfcfc;
+  border-top: 1px solid var(--main-color);
+}
 
+.bannerUp{ /* 배너 up/down 버튼 */
+  position: absolute;
+  top: -25px;
+  right: 200px;
+  font-size: 30px;
+  color: var(--main-color);
+  background: #fcfcfc;
+  width: 55px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
 
+.banner-contents{
+  width: 1200px;
+  margin: 40px auto;
+}
+
+footer#banner > div > div{ /* 전체 box 위치 조정 */
+  float: left;
+  width: 220px;
+  height: 100px;
+  padding: 0 55px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+footer#banner > div > div:nth-of-type(2){
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+footer#banner > div > div:last-of-type{ /* search 너비 */
+  padding: 0px;
+  width: 140px;
+}
+
+.banner-contents .value{ /* select title 조정 */
+  font-size: 30px;
+  color: var(--black-color);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* hotel */
+#s-hotel{position: relative;}
+#s-hotel .iconify{ /* 아이콘 */
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#s-hotel .h-box{ /* select box */
+  width: 190px;
+  height: 146px;
+  background: var(--main-color);
+  color: var(--white-color);
+  position: absolute;
+  bottom: 80px;
+  display: none; /* jQuery */
+}
+
+#s-hotel .h-box li{
+  font-size: 18px;
+  padding: 14px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+#s-hotel .h-box li:nth-of-type(2){
+  border-top: 1px solid rgba(33, 32, 30, 0.5);
+  border-bottom: 1px solid rgba(33, 32, 30, 0.5);
+}
+#s-hotel .h-box li:hover{background: var(--grey-color);}
+
+/* check in */
+#s-checkIn input[type=text]{
+  margin-top: 10px;
+  width: 220px;
+  height: 30px;
+  font-size: 17px;
+}
+
+/* number */
+#s-num{position: relative;}
+#s-num .n-view ul{
+  float: left;
+  margin-right: 40px;
+}
+
+.n-view .adult .value{margin-left: 18px; cursor: pointer;}
+.n-view .child .value{margin-left: 28px; cursor: pointer;}
+
+.n-box{ /* select box */
+  width: 220px;
+  height: 180px;
+  background: var(--main-color);
+  color: var(--white-color);
+  position: absolute;
+  bottom: 110px;
+  display: none;
+}
+
+.n-box .iconify.x-icon{ /* x icon */
+  font-size: 25px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: var(--black-color);
+  cursor: pointer;
+}
+
+.n-box ul{
+  text-align: center;
+  margin-top: 22px;
+}
+.n-box>ul>.subject{margin-bottom: 8px;}
+.n-box ul .value{
+  margin: 15px;
+  color: var(--white-color);
+}
+
+.n-box .iconify:not(.x-icon){
+  font-size: 22px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* search btn */
+#s-search button{
+  width: 200px;
+  height: 60px;
+  border: 3px solid var(--main-color);
+  color: var(--main-color);
+  background: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#s-search button:hover{
+  background: var(--main-color);
+  color: var(--white-color);
+}

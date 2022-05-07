@@ -66,8 +66,10 @@ section li.hotel .link{ /* 바로가기 */
   transition: all 0.4s ease-in;
 }
 
-section li.hotel .link:hover{background: var(--main-color);}
-section li.hotel .link:hover a{color: var(--white-color);}
+section li.hotel .link:hover{
+  background: var(--main-color);
+  color: var(--white-color);
+}
 
 section li.hotel1 .text{
   position: absolute;
@@ -235,8 +237,10 @@ section li.dining .link{ /* 바로가기 */
   transition: all 0.4s ease-in;
 }
 
-section li.dining .link:hover{background: var(--main-color);}
-section li.dining .link:hover a{color: var(--white-color);}
+section li.dining .link:hover{
+  background: var(--main-color);
+  color: var(--white-color);
+}
 
 section li.dining1 .text{
   position: absolute;
@@ -251,6 +255,7 @@ section li.dining2 .text{ /* hotel2 세부설정 */
   left: 400px;
   z-index: 10;
 }
+
 
 /* ******** dining > fine(2-1) ******** */
 .showUp{ /* -> jQuery */
@@ -299,7 +304,6 @@ section #dining1{
 #dining1 .fine8{top: 2050px; right: 80px;}
 
 
-
 /* ******** dining > casual(2-2) ******** */
 section #dining2{margin-top: 270px;}
 
@@ -338,6 +342,7 @@ section #dining2{margin-top: 270px;}
   line-height: 20px;
   color: #999;
 }
+
 
 /* =========== login =========== */
 form{
@@ -385,9 +390,7 @@ fieldset{ /* 전체 box */
 
 #tab6{margin: 25px;}
 
-#tab-button6{
-  margin-top: 65px;
-}
+#tab-button6{margin-top: 65px;}
 
 #tab-button6 li{ /* 탭 버튼 */
   float: left;
