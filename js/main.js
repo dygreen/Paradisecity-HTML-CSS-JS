@@ -50,7 +50,7 @@ $(document).ready(function(){
   });
 
 
-  // === hotel 1-1: tab menu ===
+  // ===== hotel 1-1: tab menu =====
   let button = $("#tab .tab-button>li");
   let content = $("#tab .tab-contents>li");
 
@@ -105,7 +105,7 @@ $(document).ready(function(){
   });
 
 
-  // === dining 2-1: 스크롤 애니메이션 ===
+  // ===== dining 2-1: 스크롤 애니메이션 =====
   $(window).scroll(function(){
     let val = $(window).scrollTop();
     if(val > 600 && val < 1300){
@@ -128,21 +128,21 @@ $(document).ready(function(){
   });
 
 
-  // === art-tainment: icon 효과 ===
-  let count = 1;
+  // ===== art-tainment: icon 효과 =====
+  let heart = true;
   $(".container3 li .iconify").click(function(){
-    count++;
-    if(count % 2 === 0){
+    if(heart){
       $(this).html("<span class='iconify' data-icon='majesticons:heart' data-width='24' data-height='24'></span>");
+      heart = false;
     } else {
       $(this).html("<span class='iconify' data-icon='majesticons:heart-line' data-width='24' data-height='24'></span>");
+      heart = true;
     }
   });
 
   // 스크롤 애니메이션
   $(window).scroll(function(){
     let height = $(window).scrollTop();
-    console.log(height);
 
     // 스크롤 위치에 따른 투명도 조절 : 1
     let y = -122/23180 * height + 1220/190;
@@ -179,7 +179,7 @@ $(document).ready(function(){
   });
 
 
-  // === wedding : tab ===
+  // ===== wedding : tab =====
   let button4 = $("#tab4 #tab-button4>li");
   let content4 = $("#tab4 #tab-contents4>li");
 
@@ -199,7 +199,7 @@ $(document).ready(function(){
   }
 
 
-  // === activities : slide ===
+  // ===== activities : slide =====
   let img = $(".simage5 ul");
   let img_list = $(".simage5 ul li");
   let btn = $(".bottom-btn5 ul li");
@@ -260,7 +260,7 @@ $(document).ready(function(){
   });
 
 
-  //  === login : tab ===
+  //  ===== login : tab =====
   let button6 = $("#tab6 #tab-button6>li");
   let content6 = $("#tab6 #tab-contents6>li");
 
@@ -278,10 +278,12 @@ $(document).ready(function(){
   }
 
 
-  //  === index(main) : accordion ===
+  //  ===== index(main) : section - accordion =====
   $("dl dt").click(function(){
     $("dl dt").find("+dd").hide("slow");
     $(this).find("+dd").show("slow");
+    $("dl dt").removeClass("active");
+    $(this).addClass("active");
   });
 
   $("dl .main-tab1").click(function(){
@@ -300,10 +302,104 @@ $(document).ready(function(){
     $("dl").css({"background":"url(image/main-bg5.jpg) no-repeat center top","background-size": "cover","transition":"all 1s"});
   });
 
-  // 메뉴 토글 버튼
+  // header - 메뉴 토글 버튼
   $(".menu-toggle-btn").click(function(){
     $(this).toggleClass("menu-open");
     $("#main-menu").slideToggle("fast");
   });
 
+  // footer - banner up/down
+  let upDown = true;
+  $(".bannerUp").click(function(){
+    if(upDown){
+      $(".bannerUp").html("<span class='iconify up-icon' data-icon='akar-icons:chevron-up'></span>");
+      $("footer#banner").stop().animate({bottom:"-170px"},500);
+      upDown = false;
+    } else {
+      $(".bannerUp").html("<span class='iconify down-icon' data-icon='akar-icons:chevron-down'></span>");
+      $("footer#banner").stop().animate({bottom:"0px"},500);
+      upDown = true;
+    }
+  });
+
+  // hotel) select box
+  let h_select = true;
+  $("#s-hotel .value, .selector").click(function(){
+    if(h_select){
+      $(".selector").html("<span class='iconify up-icon' data-icon='akar-icons:chevron-up'></span>");
+      $(".h-box").slideDown("fast");
+      h_select = false;
+    } else {
+      $(".selector").html("<span class='iconify down-icon' data-icon='akar-icons:chevron-down'></span>");
+      $(".h-box").slideUp("fast");
+      h_select = true;
+    }
+  });
+
+  // select box의 option을 선택하면 value를 바꿈
+  $(".h-box li").click(function(){
+    let hotel_name = $(this).find("a").text();
+    $("#s-hotel .value").text(hotel_name);
+  });
+
+  // 달력 (jQuery: date range picker)
+  $("input[name='dates']").daterangepicker();
+
+  // number) select box
+  let n_select = true;
+  $("#s-num .n-view .value").click(function(){
+    if(n_select){
+      $(".n-box").slideDown("fast");
+      n_select = false;
+    } else {
+      $(".n-box").slideUp("fast");
+      n_select = true;
+    }
+  });
+
+  $(".n-box .x-icon").click(function(){ /* x icon 클릭시 */
+    $(".n-box").slideUp("fast");
+    n_select = true;
+  });
+
+  // 숫자 증감 버튼(adult , child)
+  // adult box
+  let adult_num = parseInt($(".n-view .adult .value").text());
+  $(".adult-box .plus-icon").click(function(){
+    if(adult_num < 9){
+      adult_num++;
+      $(".n-view .adult .value").text(adult_num);
+      $(".n-box .adult-box .value").text(adult_num);
+      return;
+    }
+  });
+  
+  $(".adult-box .minus-icon").click(function(){
+    if(adult_num > 1){
+      adult_num--;
+      $(".n-view .adult .value").text(adult_num);
+      $(".n-box .adult-box .value").text(adult_num);
+      return;
+    }
+  });
+
+  // child box
+  let child_num = parseInt($(".n-view .child .value").text());
+  $(".child-box .plus-icon").click(function(){
+    if(child_num < 9){
+      child_num++;
+      $(".n-view .child .value").text(child_num);
+      $(".n-box .child-box .value").text(child_num);
+      return;
+    }
+  });
+
+  $(".child-box .minus-icon").click(function(){
+    if(child_num > 0){
+      child_num--;
+      $(".n-view .child .value").text(child_num);
+      $(".n-box .child-box .value").text(child_num);
+      return;
+    }
+  });
 });
