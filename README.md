@@ -9,7 +9,8 @@
 
 ***Main page***
 * 풀다운(100%) 메뉴
-* 아코디언 메뉴(가로방향)
+* 아코디언 메인 비주얼 메뉴(가로방향)
+* 호텔 예약 배너(select box|jQuery datePicker|+/- button...)
 
 ***Sub page***
 1. Hotel = 종합안내(1_hotel) + hotel1(1-1) + hotel2(1-2)
