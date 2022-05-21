@@ -7,8 +7,8 @@
 
 ### Page
 : Home + Sub page(9p) + Login page(1p)
-: 스토리보드 ~ 웹페이지 구현까지 직접 실행
 
+: 스토리보드 ~ 웹페이지 구현까지 직접 실행
 ***
 
 ***Main page***
