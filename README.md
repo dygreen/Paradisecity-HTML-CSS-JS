@@ -19,6 +19,8 @@
 * 아코디언 메인 비주얼 메뉴(가로방향)
 * 호텔 예약 배너(select box | jQuery datePicker | +/- button...)
 
+<br>
+
 ***Sub page***
 #### 1. Hotel = 종합안내(1_hotel) + hotel1(1-1) + hotel2(1-2)
 
@@ -27,6 +29,8 @@
 
 ###### : 'hotel 1,2' 페이지> 호텔룸 이미지 갤러리 형태로 확인 가능
 * 탭 메뉴 + 갤러리(썸네일/좌우 버튼)
+
+<br>
 
 #### 2. Dining = 종합안내(2_dining) + dining1(2-1) + dining2(2-2)
 
@@ -37,11 +41,15 @@
 * onload: 페이지 로드 애니메이션 효과(요소가 등장+올라옴)
 * scroll 효과: scroll 위치에 따른 요소 애니메이션 효과
 
+<br>
+
 #### 3. Art-tainment
 
 ###### : 시설안내 페이지 > 스크롤을 내리며 호텔 내 시설 확인 가능
 * position: sticky 활용
 * scroll 효과: scroll 위치에 따라 요소 투명도/크기 조절 
+
+<br>
 
 #### 4. Wedding
 
@@ -49,11 +57,15 @@
 * position: sticky로 이미지 고정 & 텍스트 스크롤 효과
 * 버튼 요소가 움직이는 탭 메뉴
 
+<br>
+
 #### 5. Activities
 
 ###### : 호텔 내 추천코스 안내 페이지 > 총 코스 슬라이드 비주얼 및 텍스트로 안내
 * 위로 올라가는 자동 슬라이드(up,down/bottom 버튼)
 * float를 통해 코스 요소 배치
+
+<br>
 
 #### Login
 
