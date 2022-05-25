@@ -12,16 +12,27 @@
 ***
 
 ***Main page***
+
+: 풀다운/아코디언 메뉴로 서브 페이지로 이동 가능, 호텔 예약 창이 있는 메인 페이지
 * 풀다운(100%) 메뉴
 * 아코디언 메인 비주얼 메뉴(가로방향)
-* 호텔 예약 배너(select box|jQuery datePicker|+/- button...)
+* 호텔 예약 배너(select box | jQuery datePicker | +/- button...)
 
 ***Sub page***
-1. Hotel = 종합안내(1_hotel) + hotel1(1-1) + hotel2(1-2)
+#### Hotel = 종합안내(1_hotel) + hotel1(1-1) + hotel2(1-2)
+
+: '종합안내' 페이지 > 각 호텔 페이지 소개 및 이동 가능
 * onload: 페이지 로드 애니메이션 효과(텍스트+배경)
+
+: 'hotel 1,2' 페이지> 호텔룸 이미지 갤러리 형태로 확인 가능
 * 탭 메뉴 + 갤러리(썸네일/좌우 버튼)
 
-2. Dining = 종합안내(2_dining) + dining1(2-1) + dining2(2-2)
+#### Dining = 종합안내(2_dining) + dining1(2-1) + dining2(2-2)
+
+: '종합안내' 페이지 > 각 다이닝 페이지 소개 및 이동 가능
+* onload: 페이지 로드 애니메이션 효과(텍스트+배경)
+
+: 'dining 1,2' 페이지 > 다이닝 시설 확인 가능
 * onload: 페이지 로드 애니메이션 효과(요소가 등장+올라옴)
 * scroll 효과: scroll 위치에 따른 요소 애니메이션 효과(위와 동일)
 
