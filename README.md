@@ -5,6 +5,7 @@
 
 주소: http://dyweb.dothome.co.kr/index.html
 ***
+![스크린샷 2022-05-07 오후 8 10 28](https://user-images.githubusercontent.com/95523625/173270895-a6cfe1a0-f75d-413b-87a2-2f990d274040.png)
 
 ### Page
 : Home + Sub page(9p) + Login page(1p)
@@ -71,3 +72,6 @@
 
 ###### : 로그인 페이지 > 로그인 및 예약번호를 확인할 수 있는 페이지
 * 탭 메뉴를 통한 로그인/예약조회 구분
+
+***
+#### _* 자세한 프로젝트 실행과정 정리 (노션:https://prickle-turn-785.notion.site/Paradise-City-25dcde272f484e7db7dd216ab726d04b)_
