@@ -3,7 +3,7 @@
 > 
 > [개인 프로젝트: 2022.04.22 ~ 2022.05.09]
 
-주소: http://dyweb.dothome.co.kr/index.html
+주소: https://dygreen.github.io/paradisecity/index.html
 ***
 ![스크린샷 2022-05-07 오후 8 10 28](https://user-images.githubusercontent.com/95523625/173270895-a6cfe1a0-f75d-413b-87a2-2f990d274040.png)
 
