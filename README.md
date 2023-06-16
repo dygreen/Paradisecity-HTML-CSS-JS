@@ -52,4 +52,4 @@ Login
 * 탭 메뉴를 통한 로그인/예약조회 구분
 
 ***
-#### _* 자세한 프로젝트 실행과정 정리 (노션: https://prickle-turn-785.notion.site/Paradise-City-322a0d4429e44106aaac32f979face00)_
+#### _* 자세한 프로젝트 실행과정 정리 ([노션](https://dygreen.notion.site/Paradise-City-c4d5a52d67424d3e9b90d80213368013?pvs=4))_
